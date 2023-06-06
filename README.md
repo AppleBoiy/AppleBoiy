@@ -4,7 +4,8 @@
     <img src="https://komarev.com/ghpvc/?username=appleboiy&label=Profile%20views&color=0e75b6&style=flat" alt="appleboiy" />
 </p>
 
-[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31kpeh7oicqyahxfbmitly2fjy6m&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.vercel.app/api/view?uid=31kpeh7oicqyahxfbmitly2fjy6m&redirect=true)
+Follow my tempo ♭
+[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31kpeh7oicqyahxfbmitly2fjy6m&cover_image=true&theme=natemoo-re&show_offline=false&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.vercel.app/api/view?uid=31kpeh7oicqyahxfbmitly2fjy6m&redirect=true)
 
 🔭 Currently working on
 [prerequisite tree](https://github.com/AppleBoiy/prerequisite-tree). Stay tuned
