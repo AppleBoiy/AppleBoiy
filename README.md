@@ -1,12 +1,12 @@
 ### Hi there 👋
 
-🔭 Currently working on
-[prerequisite tree](https://github.com/AppleBoiy/prerequisite-tree). Stay tuned
-for updates!
-
 <p align="left">
     <img src="https://komarev.com/ghpvc/?username=appleboiy&label=Profile%20views&color=0e75b6&style=flat" alt="appleboiy" />
 </p>
+
+🔭 Currently working on
+[prerequisite tree](https://github.com/AppleBoiy/prerequisite-tree). Stay tuned
+for updates!
 
 <p align="left">
     <a href="https://github.com/ryo-ma/github-profile-trophy">
@@ -27,16 +27,8 @@ for updates!
     </a>
 </p>
 
-<p>
-    <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=appleboiy&show_icons=true&locale=en&layout=compact" alt="appleboiy" />
-</p>
-
 <p>&nbsp;
     <img align="center" src="https://github-readme-stats.vercel.app/api?username=appleboiy&show_icons=true&locale=en" alt="appleboiy" />
-</p>
-
-<p>
-    <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=appleboiy&" alt="appleboiy" />
 </p>
 
 📫 How to Reach Me:
