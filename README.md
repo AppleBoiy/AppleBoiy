@@ -27,10 +27,6 @@ for updates!
     </a>
 </p>
 
-<p>&nbsp;
-    <img align="center" src="https://github-readme-stats.vercel.app/api?username=appleboiy&show_icons=true&locale=en" alt="appleboiy" />
-</p>
-
 📫 How to Reach Me:
 
 - LinkedIn: [C. Jainan](https://www.linkedin.com/in/chaipat-jainan/)
