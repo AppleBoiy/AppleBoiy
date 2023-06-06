@@ -7,7 +7,15 @@
 Follow my tempo ♭
 <br>
 
-[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31kpeh7oicqyahxfbmitly2fjy6m&cover_image=true&theme=natemoo-re&show_offline=false&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.vercel.app/api/view?uid=31kpeh7oicqyahxfbmitly2fjy6m&redirect=true)
+<iframe
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/4VuS959DSpr82t3qBqCrWG?utm_source=generator"
+    width="100%" height="352" frameBorder="0" allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+</iframe>
+
+<br>
 
 🔭 Currently working on
 [prerequisite tree](https://github.com/AppleBoiy/prerequisite-tree). Stay tuned
