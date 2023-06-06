@@ -4,17 +4,6 @@
     <img src="https://komarev.com/ghpvc/?username=appleboiy&label=Profile%20views&color=0e75b6&style=flat" alt="appleboiy" />
 </p>
 
-Follow my tempo ♭
-<br>
-
-<iframe
-    style="border-radius:12px"
-    src="https://open.spotify.com/embed/track/4VuS959DSpr82t3qBqCrWG?utm_source=generator"
-    width="100%" height="352" frameBorder="0" allowfullscreen=""
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy">
-</iframe>
-
 <br>
 
 🔭 Currently working on
