@@ -1,10 +1,6 @@
 <h1><img src="https://venngage-wordpress.s3.amazonaws.com/uploads/2022/09/meme_this_is_fine_dog.png" width=40 />   Bonjour!    </h1>
 <img src="https://media.tenor.com/L-9W2hM5U3EAAAAM/bh187-family-guy.gif" width=500 />
 
-<p align="left">
-    <img src="https://komarev.com/ghpvc/?username=appleboiy&label=Profile%20views&color=0e75b6&style=flat" alt="appleboiy" />
-</p>
-
 <br>
 
 🔭 Currently working on
@@ -29,3 +25,6 @@ for updates!
 - LinkedIn: [C. Jainan](https://www.linkedin.com/in/chaipat-jainan/)
 - Email: [Contact Me!](mailto:contact.chaipat@gmail.com)
 
+<p align="left">
+    <img src="https://komarev.com/ghpvc/?username=appleboiy&label=Profile%20views&color=0e75b6&style=flat" alt="appleboiy" />
+</p>
