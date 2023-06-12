@@ -3,13 +3,13 @@
 
 <br>
 
-🚧 **Work in Progress** 🚧
+# 🚧 **Work in Progress** 🚧
 
 I am currently actively working on [prerequisite tree](https://github.com/AppleBoiy/prerequisite-tree) and making continuous improvements. Please note that some features may still be under development or undergoing testing. Feel free to explore the existing functionality, provide feedback, and stay tuned for updates!
 
 If you encounter any issues or have suggestions for improvements, please don't hesitate to open an issue or submit a pull request. Your contributions are highly appreciated!
 
-📫 How to Reach Me:
+# 📫 How to Reach Me:
 
 - LinkedIn: [C. Jainan](https://www.linkedin.com/in/chaipat-jainan/)
 - Email: [Contact Me!](mailto:contact.chaipat@gmail.com)
