@@ -3,22 +3,11 @@
 
 <br>
 
-🔭 Currently working on
-[prerequisite tree](https://github.com/AppleBoiy/prerequisite-tree). Stay tuned
-for updates!
+🚧 **Work in Progress** 🚧
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left">
-    <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/>
-    </a>
-    <a href="https://www.java.com" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/>
-    </a>
-    <a href="https://www.python.org" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
-    </a>
-</p>
+I am currently actively working on [prerequisite tree](https://github.com/AppleBoiy/prerequisite-tree) and making continuous improvements. Please note that some features may still be under development or undergoing testing. Feel free to explore the existing functionality, provide feedback, and stay tuned for updates!
+
+If you encounter any issues or have suggestions for improvements, please don't hesitate to open an issue or submit a pull request. Your contributions are highly appreciated!
 
 📫 How to Reach Me:
 
