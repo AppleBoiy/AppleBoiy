@@ -24,7 +24,3 @@ for updates!
 
 - LinkedIn: [C. Jainan](https://www.linkedin.com/in/chaipat-jainan/)
 - Email: [Contact Me!](mailto:contact.chaipat@gmail.com)
-
-<p align="left">
-    <img src="https://komarev.com/ghpvc/?username=appleboiy&label=Profile%20views&color=0e75b6&style=flat" alt="appleboiy" />
-</p>
