@@ -1,6 +1,6 @@
-<h1><img src="https://venngage-wordpress.s3.amazonaws.com/uploads/2022/09/meme_this_is_fine_dog.png" width=40 />   Bonjour!    </h1>
+<h1><img src="https://venngage-wordpress.s3.amazonaws.com/uploads/2022/09/meme_this_is_fine_dog.png" width=40 />     </h1>
 
-**Hi there!!**
+**Bonjour!**
 
  I am computer science student at [Chiang Mai University](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
@@ -11,7 +11,9 @@ I enjoy working on challenging projects and welcome feedback to improve my skill
 Let's connect and embark on a journey of continuous learning together!
 
 
-<img src="https://media.tenor.com/rAlksbLmt8kAAAAC/family-guy-stewie.gif" width=500 />
+<p align="center">
+  <img src="https://media.tenor.com/rAlksbLmt8kAAAAC/family-guy-stewie.gif" width=500 /></center>
+</p>
 
 <br>
 
