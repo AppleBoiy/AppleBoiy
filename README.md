@@ -11,10 +11,6 @@ I enjoy working on challenging projects and welcome feedback to improve my skill
 Let's connect and embark on a journey of continuous learning together!
 
 
-<p align="center">
-  <img src="https://media.tenor.com/rAlksbLmt8kAAAAC/family-guy-stewie.gif" width=500 /></center>
-</p>
-
 <br>
 
 # 🚧 **Work in Progress** 🚧
