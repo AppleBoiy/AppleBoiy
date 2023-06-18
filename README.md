@@ -15,7 +15,7 @@ Let's connect and embark on a journey of continuous learning together!
 
 # 🚧 **Work in Progress** 🚧
 
-I am currently actively working on [prerequisite tree](https://github.com/AppleBoiy/prerequisite-tree) and making continuous improvements. Please note that some features may still be under development or undergoing testing. Feel free to explore the existing functionality, provide feedback, and stay tuned for updates!
+I am currently actively working on [prerequisite tree](https://github.com/AppleBoiy/prerequisite-tree) and [cs wiki](https://github.com/AppleBoiy/cs-wiki). Please note that some features may still be under development or undergoing testing. Feel free to explore the existing functionality, provide feedback, and stay tuned for updates!
 
 If you encounter any issues or have suggestions for improvements, please don't hesitate to open an issue or submit a pull request. Your contributions are highly appreciated!
 
