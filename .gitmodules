@@ -3,10 +3,6 @@
   url = git@github.com:AppleBoiy/CMU-TA.git
 
 [submodule "Learning/year1"]
-	path = Learning/year1
-  url = git@github.com:AppleBoiy/CMU-1st-year.git
-
-[submodule "Learning/year1"]
 	path = Learning/year2
   url = git@github.com:AppleBoiy/CMU-2nd-year.git
 
