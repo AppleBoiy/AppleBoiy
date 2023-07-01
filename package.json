@@ -1,24 +1,24 @@
 {
-  "name": "AppleBoiy",
-  "description": "",
-  "version": "0.1.0",
-  "homepage": "https://github.com/AppleBoiy/AppleBoiy",
   "author": "AppleBoiy (github.com/AppleBoiy)",
-  "repository": "AppleBoiy/AppleBoiy",
   "bugs": {
     "url": "https://github.com/AppleBoiy/AppleBoiy/issues"
   },
-  "license": "MIT",
-  "files": [
-    "README.md"
-  ],
+  "description": "",
   "engines": {
     "node": ">=4"
   },
+  "files": [
+    "README.md"
+  ],
+  "homepage": "https://github.com/AppleBoiy/AppleBoiy",
+  "keywords": [
+    "AppleBoiy"
+  ],
+  "license": "MIT",
+  "name": "AppleBoiy",
+  "repository": "AppleBoiy/AppleBoiy",
   "scripts": {
     "test": "mocha"
   },
-  "keywords": [
-    "AppleBoiy"
-  ]
+  "version": "0.1.0"
 }

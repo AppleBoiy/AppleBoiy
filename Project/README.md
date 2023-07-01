@@ -17,10 +17,6 @@ In this section, you will find a variety of projects that I have worked on outsi
 
 The "CSCMU-65s" folder contains study projects and homework assignments that I worked on for my major at CS, Chiang Mai University. These projects were completed in collaboration with my classmates and friends from the class, allowing us to apply our knowledge, problem-solving abilities, and teamwork skills to tackle challenging tasks. The projects in this section demonstrate our understanding and application of the concepts learned during our coursework.
 
-## Contributing
-
-While this folder primarily showcases my projects, contributions are welcome if they align with the original purpose. If you would like to contribute or suggest improvements to any of the existing projects, please follow the standard guidelines for contributing outlined in the repository.
-
 ## License
 
 The projects in this folder are licensed under the MIT License. You can find the full text of the license in the [LICENSE](./LICENSE) file. The MIT License grants permissions to use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the projects, subject to certain conditions. It also provides a warranty disclaimer. Please refer to the license file for more details.

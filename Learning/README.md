@@ -22,10 +22,6 @@ Feel free to explore the content to gain insights into the courses I studied dur
 
 This section contains lecture materials from my time as a Teaching Assistant at Chiang Mai University. The materials here encompass the courses for which I served as a TA, including lecture notes, slides, and any supplementary resources. These materials highlight my role in supporting and assisting students in their learning journey. They provide insights into the topics covered and the teaching methodologies employed during my tenure as a TA.
 
-## Contributing
-
-While this folder primarily serves as a personal collection of lecture materials, contributions are welcome if they align with the original purpose. If you would like to contribute or suggest improvements to the existing materials, please follow the standard guidelines for contributing outlined in the repository.
-
 ## License
 
 The projects in this folder are licensed under the MIT License. You can find the full text of the license in the [LICENSE](/LICENSE) file. The MIT License grants permissions to use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the projects, subject to certain conditions. It also provides a warranty disclaimer. Please refer to the license file for more details.
