@@ -4,7 +4,7 @@
 
 If you discover a security vulnerability in my GitHub user profile, I appreciate your help in disclosing it to me responsibly. To report a vulnerability, please follow these steps:
 
-1. **Privately** share the details of the vulnerability with me by sending a direct message to my GitHub account or by emailing me at [security@example.com](mailto:contact.chaipat@gmail.com). Please refrain from posting the vulnerability publicly until I have addressed the issue.
+1. **Privately** share the details of the vulnerability with me by sending a direct message to my GitHub account or by emailing me at [contact.chaipat@gmail.com](mailto:contact.chaipat@gmail.com). Please refrain from posting the vulnerability publicly until I have addressed the issue.
 2. Provide me with a detailed description of the vulnerability, including the steps to reproduce it and any additional information that may be helpful for my investigation.
 3. Allow me sufficient time to assess and address the vulnerability. I will aim to provide a timely response and resolve any issues as quickly as possible.
 4. I will acknowledge your report upon receipt and keep you informed of the progress in resolving the vulnerability.
