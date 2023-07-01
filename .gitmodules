@@ -25,3 +25,6 @@
 [submodule "Project/CSCMU-65s/prerequisite-tree-dagreD3"]
 	path = Project/CSCMU-65s/prerequisite-tree-dagreD3
 	url = git@github.com:CSCMU-65s/prerequisite-tree-dagreD3.git
+[submodule "Project/3F"]
+	path = Project/3F
+	url = git@github.com:AppleBoiy/For-Fun-Funda-FullSRC.git
