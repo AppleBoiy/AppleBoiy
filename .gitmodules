@@ -11,3 +11,6 @@
   url = git@github.com:AppleBoiy/CMU-2nd-year.git
 
 
+[submodule "Project/master-chess"]
+	path = Project/master-chess
+	url = git@github.com:CSCMU-65s/master-chess.git
