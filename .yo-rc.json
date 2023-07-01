@@ -1,0 +1,20 @@
+{
+  "generator-gitignore-io": {
+    "options": [
+      "angular",
+      "assembler",
+      "c",
+      "c++",
+      "flask",
+      "goland+all",
+      "intellij+all",
+      "java",
+      "macos",
+      "node",
+      "python",
+      "vim",
+      "visualstudio",
+      "visualstudiocode"
+    ]
+  }
+}
