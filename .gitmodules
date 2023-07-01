@@ -10,3 +10,6 @@
 [submodule "Project/master-chess"]
 	path = Project/master-chess
 	url = git@github.com:CSCMU-65s/master-chess.git
+[submodule "Learning/year2"]
+	path = Learning/year2
+	url = git@github.com:AppleBoiy/CMU-2nd-year.git
