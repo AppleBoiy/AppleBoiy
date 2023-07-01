@@ -13,3 +13,6 @@
 [submodule "Learning/year2"]
 	path = Learning/year2
 	url = git@github.com:AppleBoiy/CMU-2nd-year.git
+[submodule "Project/CSCMU-65s/cs-wiki-macOS"]
+	path = Project/CSCMU-65s/cs-wiki-macOS
+	url = git@github.com:CSCMU-65s/cs-wiki-macOS.git
