@@ -28,3 +28,6 @@
 [submodule "Project/3F"]
 	path = Project/3F
 	url = git@github.com:AppleBoiy/For-Fun-Funda-FullSRC.git
+[submodule "dotfiles"]
+	path = dotfiles
+	url = git@github.com:AppleBoiy/dotfiles.git
