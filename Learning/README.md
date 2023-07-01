@@ -4,11 +4,11 @@ This folder contains a collection of lecture materials from my time as a student
 
 ## Table of Contents
 1. Study Lectures
-   1. [Year 1](./year1)
-   2. [Year 2](./year2)
+   1. [Year 1](https://github.com/AppleBoiy/CMU-1st-year)
+   2. [Year 2](https://github.com/AppleBoiy/CMU-2nd-year)
    3. [Year 3](/Project)
    4. [Year 4](/Project)
-2. [Teaching Assistant](./TA)
+2. [Teaching Assistant](https://github.com/AppleBoiy/CMU-TA)
 3. [Contributing](#contributing)
 4. [License](#license)
 
