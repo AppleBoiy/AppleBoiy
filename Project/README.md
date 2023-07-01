@@ -4,7 +4,7 @@ This folder contains a collection of projects that I have worked on throughout m
 
 ## Table of Contents
 
-1. [Normal Projects](./)
+1. [Normal Projects](/Project)
 2. [CSCMU-65s](./CSCMU-65s)
 3. [Contributing](#contributing)
 4. [License](#license)
@@ -24,7 +24,3 @@ While this folder primarily showcases my projects, contributions are welcome if 
 ## License
 
 The projects in this folder are licensed under the MIT License. You can find the full text of the license in the [LICENSE](./LICENSE) file. The MIT License grants permissions to use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the projects, subject to certain conditions. It also provides a warranty disclaimer. Please refer to the license file for more details.
-
----
-
-Feel free to customize the content of the `README.md` file based on the actual projects in your "Project" folder. Tailor the descriptions to accurately reflect your normal projects and the "CSCMU-65s" folder, providing relevant details and information to showcase your work effectively.

@@ -1,13 +1,31 @@
 # Learning
 
-This folder contains my lecture study materials from my time as a student at CS, Chiang Mai University (CMU), as well as lab lectures that I was a teaching assistant (TA) for at CMU. The materials in this folder reflect my academic journey and serve as a reference for the courses and topics I studied during my time at CMU.
+This folder contains a collection of lecture materials from my time as a student at Chiang Mai University (CMU) and as a Teaching Assistant (TA) at CMU. The materials stored here represent my academic journey, encompassing the courses I studied during my undergraduate years and the lectures I delivered as a TA.
 
 ## Table of Contents
-1. [Study Lectures](#study-lectures)
+1. Study Lectures
    1. [Year 1](./year1)
    2. [Year 2](./year2)
-2. [TA Lectures](./TA)
+   3. [Year 3](/Project)
+   4. [Year 4](/Project)
+2. [Teaching Assistant](./TA)
+3. [Contributing](#contributing)
+4. [License](#license)
 
 ## Study Lectures
 
-This section contains lecture study materials when I was studies at CS, Chiang Mai University.
+In this section, you will find lecture materials from my four years of study at Chiang Mai University. These materials include lecture notes, slides, assignments, and any other relevant resources from the courses I took during this period. The study lectures cover a wide range of topics related to my major and provide insights into the subjects studied and the skills acquired throughout my undergraduate journey.
+
+Feel free to explore the content to gain insights into the courses I studied during each year and the concepts covered. The materials are organized chronologically, representing the progression of my studies from year one to year four.
+
+## Teaching Assistant
+
+This section contains lecture materials from my time as a Teaching Assistant at Chiang Mai University. The materials here encompass the courses for which I served as a TA, including lecture notes, slides, and any supplementary resources. These materials highlight my role in supporting and assisting students in their learning journey. They provide insights into the topics covered and the teaching methodologies employed during my tenure as a TA.
+
+## Contributing
+
+While this folder primarily serves as a personal collection of lecture materials, contributions are welcome if they align with the original purpose. If you would like to contribute or suggest improvements to the existing materials, please follow the standard guidelines for contributing outlined in the repository.
+
+## License
+
+The projects in this folder are licensed under the MIT License. You can find the full text of the license in the [LICENSE](/LICENSE) file. The MIT License grants permissions to use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the projects, subject to certain conditions. It also provides a warranty disclaimer. Please refer to the license file for more details.
