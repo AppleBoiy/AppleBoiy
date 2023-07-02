@@ -1,12 +1,9 @@
 [submodule "Learning/TA"]
-  path = Learning/TA
-  url = git@github.com:AppleBoiy/CMU-TA.git
-
+ 	path = Learning/TA
+	url = git@github.com:AppleBoiy/CMU-TA.git
 [submodule "Learning/year1"]
 	path = Learning/year1
 	url = git@github.com:AppleBoiy/CMU-1st-year.git
-
-
 [submodule "Project/master-chess"]
 	path = Project/master-chess
 	url = git@github.com:CSCMU-65s/master-chess.git
@@ -16,8 +13,8 @@
 [submodule "Project/CSCMU-65s/cs-wiki-macOS"]
 	path = Project/CSCMU-65s/cs-wiki-macOS
 	url = git@github.com:CSCMU-65s/cs-wiki-macOS.git
-[submodule "Project/CSCMU-65s/.github"]
-	path = Project/CSCMU-65s/.github
+[submodule "Project/CSCMU-65s/Page"]
+	path = Project/CSCMU-65s/Page
 	url = git@github.com:CSCMU-65s/.github.git
 [submodule "Project/CSCMU-65s/mycos-react-I27"]
 	path = Project/CSCMU-65s/mycos-react-I27
@@ -25,9 +22,9 @@
 [submodule "Project/CSCMU-65s/prerequisite-tree-dagreD3"]
 	path = Project/CSCMU-65s/prerequisite-tree-dagreD3
 	url = git@github.com:CSCMU-65s/prerequisite-tree-dagreD3.git
-[submodule "Project/3F"]
-	path = Project/3F
+[submodule "Project/For-Fun-Funda"]
+	path = Project/For-Fun-Funda
 	url = git@github.com:AppleBoiy/For-Fun-Funda-FullSRC.git
-[submodule "dotfiles"]
-	path = dotfiles
+[submodule "Dotfiles"]
+	path = Dotfiles
 	url = git@github.com:AppleBoiy/dotfiles.git
