@@ -22,3 +22,9 @@
 [submodule "Dotfiles"]
 	path = Dotfiles
 	url = git@github.com:AppleBoiy/dotfiles.git
+[submodule "Project/CSCMU-65s/Organize_page"]
+	path = Project/CSCMU-65s/Organize_page
+	url = git@github.com:CSCMU-65s/.github.git
+[submodule "Project/For-Fun-Funda"]
+	path = Project/For-Fun-Funda
+	url = git@github.com:AppleBoiy/For-Fun-Funda-FullSRC.git
