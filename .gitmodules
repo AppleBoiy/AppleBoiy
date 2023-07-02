@@ -19,3 +19,6 @@
 [submodule "Project/CSCMU-65s/prerequisite-tree-dagreD3"]
 	path = Project/CSCMU-65s/prerequisite-tree-dagreD3
 	url = git@github.com:CSCMU-65s/prerequisite-tree-dagreD3.git
+[submodule "Dotfiles"]
+	path = Dotfiles
+	url = git@github.com:AppleBoiy/dotfiles.git
