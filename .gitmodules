@@ -28,3 +28,6 @@
 [submodule "Learning/year3"]
 	path = Learning/year3
 	url = git@github.com:AppleBoiy/CMU-3rd-year.git
+[submodule "Learning/year4"]
+	path = Learning/year4
+	url = git@github.com:AppleBoiy/CMU-4th-year.git
