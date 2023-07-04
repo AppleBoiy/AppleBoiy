@@ -29,8 +29,8 @@ Feel free to explore the content to gain insights into the courses I studied dur
 
 1. [Year 1](https://github.com/AppleBoiy/CMU-1st-year)
 2. [Year 2](https://github.com/AppleBoiy/CMU-2nd-year)
-3. Year 3
-4. Year 4
+3. [Year 3](https://github.com/AppleBoiy/CMU-3rd-year)
+4. [Year 4](https://github.com/AppleBoiy/CMU-4th-year)
 
 <!-- TEACHING ASSISTANT -->
 ## Teaching Assistant
