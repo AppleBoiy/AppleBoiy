@@ -12,19 +12,8 @@
 
 <p align="center">Let's connect and embark on a journey of continuous learning together!</p>
 
-
 <br>
-
-<h2 align="center">🚧 Work in Progress 🚧</h2>
-
-<p align="center">I am currently actively working on <a href="https://github.com/AppleBoiy/prerequisite-tree">prerequisite tree</a> and <a href="https://github.com/AppleBoiy/cs-wiki">cs wiki</a>. Please note that some features may still be under development or undergoing testing. Feel free to explore the existing functionality, provide feedback, and stay tuned for updates!</p>
-
-<p align="center">If you encounter any issues or have suggestions for improvements, please don't hesitate to open an issue or submit a pull request. Your contributions are highly appreciated!</p>
-
 <h2 align="center">📫 How to Reach Me</h3>
 
 <p align="center">LinkedIn: <a href="https://www.linkedin.com/in/chaipat-jainan/">C. Jainan</a><p>
 <p align="center">Email: <a href="mailto:contact.chaipat@gmail.com">Contact Me!</a><p>
-
-
-
