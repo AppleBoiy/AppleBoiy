@@ -32,5 +32,5 @@
 	path = Learning/year4
 	url = git@github.com:AppleBoiy/CMU-4th-year.git
 [submodule "Project/CSCMU-65s/Project/CSCMU-65s/runner-bib-detector"]
-	path = Project/CSCMU-65s/Project/CSCMU-65s/runner-bib-detector
+	path = Project/CSCMU-65s/runner-bib-detector
 	url = git@github.com:CSCMU-65s/runner-bib-detector.git
