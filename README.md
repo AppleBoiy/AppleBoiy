@@ -20,6 +20,7 @@ Skills: PYTHON  / GOLANG / UNITY 2D
 
 <h1 align="right">📬HOW TO REACH ME</h1>
 
-[<img  align="right" src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/chaipat-jainan/)  [<img align="right" src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/reddit.svg' alt='Reddit' height='40'>](https://www.reddit.com/user/AppleBIy)  [<img align="right" src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/icloud.svg' alt='website' height='40'>](https://github.com/CSCMU-65s)  
+[<img  align="right" src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/chaipat-jainan/)  [<img align="right" src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/reddit.svg' alt='Reddit' height='40'>](https://www.reddit.com/user/AppleBIy)  [<img align="right" src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/icloud.svg' alt='website' height='40'>](https://github.com/CSCMU-65s)  [<img align="right" src="https://img.icons8.com/ios-filled/50/mail.png" alt="mail" height="40">](mailto:contact.chaipat@gmail.com)
+
  
 
