@@ -17,3 +17,6 @@
 	path = Learning/year4
   url = git@github.com:AppleBoiy/CMU-4th-year.git
 
+[submodule "majorwork"]
+	path = majorwork
+	url = git@github.com:AppleBoiy/majorwork.git
