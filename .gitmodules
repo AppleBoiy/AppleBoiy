@@ -16,6 +16,4 @@
 [submodule "Learning/year4"]
 	path = Learning/year4
   url = git@github.com:AppleBoiy/CMU-4th-year.git
-[submodule "Project/CSCMU-65s"]
-  path = Project/CSCMU-65s
-  url = git@github.com:AppleBoiy/majorwork.git
+

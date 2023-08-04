@@ -1,6 +1,0 @@
-[submodule "cs-wiki-macOS"]
-	path = cs-wiki-macOS
-	url = git@github.com:CSCMU-65s/cs-wiki-macOS.git
-[submodule "runner-bib-detector"]
-	path = runner-bib-detector
-	url = git@github.com:CSCMU-65s/runner-bib-detector.git
