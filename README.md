@@ -11,7 +11,7 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 
 ### 🚀 What I'm Up To
 
-- I'm currently working on **mygrader**
+- I'm currently working on [mygrader](https://github.com/AppleBoiy/my-grader)
 - I'm currently learning **unit testing**
 
 ### 🛠️ Skills
@@ -19,7 +19,7 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 - Python enthusiast 
 - Proficient in unit testing, ensuring code quality 
 - Experienced with Git version control 
-- LeetCode problem solver, always up for a coding challenge 
+- Problem solver, always up for a coding challenge 
 - Passionate about teaching, coaching, and learning 
 
 ### 📬 How to Reach Me
