@@ -4,7 +4,7 @@
 
 <h1 align="center">Bonjour! 👋</h1>
 
-Hey there, I'm CJ from Thailand! Currently, I'm a passionate Second-Year Computer Science Student at [Chiang Mai University, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
+Hey there, I'm CJ from Thailand! Currently, I'm a Second-Year Computer Science Student at [Chiang Mai University, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
 I'm on a never-ending quest for knowledge and thrive in the world of technology and computer science. Constantly exploring and staying ahead in this dynamic field brings me immense joy and fulfillment.
 
