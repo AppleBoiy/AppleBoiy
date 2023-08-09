@@ -25,7 +25,6 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 ### 📬 How to Reach Me
 
 - Connect with me on [LinkedIn](https://www.linkedin.com/in/chaipat-jainan/)
-- Join the conversation on [Reddit](https://www.reddit.com/user/AppleBIy)
 - Check out my projects on [GitHub](https://github.com/CSCMU-65s)
 - Shoot me an email at [contact.chaipat@gmail.com](mailto:contact.chaipat@gmail.com)
 
