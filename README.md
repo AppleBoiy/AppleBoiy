@@ -2,25 +2,33 @@
     <img src="https://venngage-wordpress.s3.amazonaws.com/uploads/2022/09/meme_this_is_fine_dog.png" width="200">
 </p>
 
-<h1 align="center">Bonjour!</h1>
+<h1 align="center">Bonjour! 👋</h1>
 
-I'm CJ from Thailand, and I currently a computer science student at <a href="https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8">Chiang Mai University</a>.
+Hey there, I'm CJ from Thailand! 🇹🇭 Currently, I'm a passionate computer science student at [Chiang Mai University](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
-I have a deep passion for learning and studying. 
-Exploring the world of technology and diving into the depths of computer science brings me immense joy and fulfillment.
-As a student, I always strive to expand my knowledge and stay at the forefront of advancements in the field.
+I'm on a never-ending quest for knowledge and thrive in the world of technology and computer science. Constantly exploring and staying ahead in this dynamic field brings me immense joy and fulfillment.
 
-Skills: PYTHON  / GOLANG / UNITY 2D
+### 🚀 What I'm Up To
 
-- 🔭 I’m currently working on runner-bib-detector 
-- 🌱 I’m currently learning OCR and BIB 
+- 🔭 I'm currently working on **runner-bib-detector**
+- 🌱 I'm currently learning **OCR and BIB recognition**
 
-![GitHub metrics](https://metrics.lecoq.io/AppleBoiy)  
+### 🛠️ Skills
 
+- Python enthusiast 
+- Proficient in unit testing, ensuring code quality 
+- Experienced with Git version control 
+- LeetCode problem solver, always up for a coding challenge 
+- Passionate about teaching, coaching, and learning 
 
-<h1 align="left">📬HOW TO REACH ME</h1>
+### 📬 How to Reach Me
 
-[<img  align="left" src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/chaipat-jainan/)  [<img align="left" src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/reddit.svg' alt='Reddit' height='40'>](https://www.reddit.com/user/AppleBIy)  [<img align="left" src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/icloud.svg' alt='website' height='40'>](https://github.com/CSCMU-65s)  [<img align="left" src="https://img.icons8.com/ios-filled/50/mail.png" alt="mail" height="40">](mailto:contact.chaipat@gmail.com)
+- Connect with me on [LinkedIn](https://www.linkedin.com/in/chaipat-jainan/)
+- Join the conversation on [Reddit](https://www.reddit.com/user/AppleBIy)
+- Check out my projects on [GitHub](https://github.com/CSCMU-65s)
+- Shoot me an email at [contact.chaipat@gmail.com](mailto:contact.chaipat@gmail.com)
 
- 
+### 📝 My Resume
+
+For a comprehensive overview of my education, skills, experiences, and projects, take a look at [my detailed resume](resume.md). You'll get a deeper insight into my journey and the exciting things I've been involved in.
 
