@@ -1,4 +1,4 @@
-# Chaipat Jainan
+# Chaipat J.
 
 [LinkedIn](https://www.linkedin.com/in/chaipat-jainan) | Email: [contact.chaipat@gmail.com](mailto:contact.chaipat@gmail.com)
 
