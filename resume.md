@@ -27,7 +27,7 @@ Chiang Mai University (CMU)
 
 **Documentation Writer**
 
-- Authored comprehensive documentation for computer science students, simplifying complex concepts.
+- Authored comprehensive documentation for computer science students.
 
 **Data Science Project Contributor**
 
@@ -37,7 +37,7 @@ Chiang Mai University (CMU)
 
 - Proficient in Python programming and unit testing for project quality assurance.
 - Familiar with Git for version control and collaborative coding.
-- Strong problem-solving skills, actively participating in LeetCode challenges.
+- Strong problem-solving skills.
 - Passionate about teaching and coaching, fostering a supportive learning environment.
 - Eager learner with a strong ability to understand and apply new concepts.
 - Web application development (novice level).
