@@ -1,4 +1,4 @@
-# Chaipat J.
+# Chaipat J
 
 [LinkedIn](https://www.linkedin.com/in/chaipat-jainan) | Email: [contact.chaipat@gmail.com](mailto:contact.chaipat@gmail.com)
 
@@ -62,4 +62,3 @@ Thai (Native), English (Proficient)
 - Exploring new programming challenges and enhancing problem-solving skills.
 - Continuous learning and staying updated with emerging technologies.
 - Collaborating on innovative projects and contributing to the tech community.
-
