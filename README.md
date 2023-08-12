@@ -8,7 +8,6 @@ Hey there, I'm CJ from Thailand! Currently, I'm a Second-Year Computer Science S
 
 I'm on a never-ending quest for knowledge and thrive in the world of technology and computer science. Constantly exploring and staying ahead in this dynamic field brings me immense joy and fulfillment.
 
-
 ### 🚀 What I'm Up To
 
 - I'm currently working on [mygrader](https://github.com/AppleBoiy/my-grader)
@@ -16,11 +15,11 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 
 ### 🛠️ Skills
 
-- Python enthusiast 
-- Proficient in unit testing, ensuring code quality 
-- Experienced with Git version control 
-- Problem solver, always up for a coding challenge 
-- Passionate about teaching, coaching, and learning 
+- Python enthusiast
+- Proficient in unit testing, ensuring code quality
+- Experienced with Git version control
+- Problem solver, always up for a coding challenge
+- Passionate about teaching, coaching, and learning
 
 ### 📬 How to Reach Me
 
@@ -30,5 +29,4 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 
 ### 📝 My Resume
 
-For a comprehensive overview of my education, skills, experiences, and projects, take a look at [my detailed resume](./ChaipatJResume.pdf). You'll get a deeper insight into my journey and the exciting things I've been involved in.
-
+For a comprehensive overview of my education, skills, experiences, and projects, take a look at [my detailed resume](resume.md). You'll get a deeper insight into my journey and the exciting things I've been involved in.

@@ -37,4 +37,3 @@ Remember that interactions within this GitHub user profile may have an impact be
 By participating in this GitHub user profile, you agree to abide by this code of conduct. Violations of this code of conduct may result in appropriate actions being taken, including the reporting of incidents to relevant authorities if necessary.
 
 This code of conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.1, available at [https://www.contributor-covenant.org/version/2/1/code_of_conduct/](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
-
