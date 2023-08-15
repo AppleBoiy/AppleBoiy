@@ -29,4 +29,4 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 
 ### 📝 My Resume
 
-For a comprehensive overview of my education, skills, experiences, and projects, take a look at [my detailed resume](resume.md). You'll get a deeper insight into my journey and the exciting things I've been involved in.
+For a comprehensive overview of my education, skills, experiences, and projects, take a look at [my detailed resume](./ChaipatJResume.pdf). You'll get a deeper insight into my journey and the exciting things I've been involved in.
