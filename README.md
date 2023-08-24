@@ -11,7 +11,7 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 ### 🚀 What I'm Up To
 
 - I'm currently working on [mygrader](https://github.com/AppleBoiy/my-grader)
-- I'm currently learning **unit testing**
+- I'm currently learning **CMS (Contest Management System)**
 
 ### 🛠️ Skills
 
