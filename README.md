@@ -51,6 +51,8 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" height="40" alt="unity logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unix/unix-original.svg" height="40" alt="unix logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shell/shell-original.svg" height="40" alt="unix logo"  />
 </div>
 
 ###
