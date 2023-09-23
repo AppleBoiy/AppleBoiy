@@ -25,7 +25,7 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 ### 🚀 What I'm Up To
 
 - I'm currently working on [cms](https://github.com/AppleBoiy/cms)
-- I'm currently learning **CMS (Contest Management System)**
+- I'm currently learning [CMS (Contest Management System)](http://cms-dev.github.io)
 
 ### 🛠️ Skills
 
