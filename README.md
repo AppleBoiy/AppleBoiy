@@ -48,7 +48,7 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 </div>
 
 
-### 🛠️ FRAMEWORKS, PLATFORMS & LIBRARIES
+## 🛠️ FRAMEWORKS, PLATFORMS & LIBRARIES
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg" height="40" alt="pytest logo"  />
   <img width="12" />
