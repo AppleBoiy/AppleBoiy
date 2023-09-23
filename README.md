@@ -58,11 +58,3 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 ![GIT](https://img.shields.io/badge/Git-fc6d26?style=flat&logo=git&logoColor=white)
 ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=flat&logo=notion&logoColor=white)
 
-
-<h3 align="left">🔥   My Stats :</h3>
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AppleBoiy&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=AppleBoiy&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height=150" alt="languages graph"  />
-</div>
-
-
