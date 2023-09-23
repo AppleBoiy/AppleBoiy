@@ -27,7 +27,7 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 - I'm currently working on [cms](https://github.com/AppleBoiy/cms)
 - I'm currently learning [CMS (Contest Management System)](http://cms-dev.github.io)
 
-### 🛠️ Skills
+## 📃 Skills
 
 - Python enthusiast
 - Proficient in unit testing, ensuring code quality
@@ -35,32 +35,34 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 - Problem solver, always up for a coding challenge
 - Passionate about teaching, coaching, and learning
 
-<h3 align="left">🛠 Language and tools</h3>
+## 💻 Tech Stack:
+![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) 
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=flat&logo=markdown&logoColor=white) 
+![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=flat&logo=gnu-bash&logoColor=white) 
+![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=flat&logo=go&logoColor=white)
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white) 
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white)
 
-###
+### ☁️ Hosting/SaaS
+![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=flat&logo=azure-devops&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?style=flat&logo=google-cloud&logoColor=white)
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="40" alt="csharp logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="40" alt="bash logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" height="40" alt="jetbrains logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" height="40" alt="unity logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unix/unix-original.svg" height="40" alt="unix logo"  />
-  <img width="12" />
-  
-</div>
+### 🛠️ FRAMEWORKS, PLATFORMS & LIBRARIES
 
-###
+![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=flat&logo=anaconda&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=flat&logo=github&logoColor=white) 
+
+### 📚 OTHER
+![LINUX](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black) 
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white) 
+![GIT](https://img.shields.io/badge/Git-fc6d26?style=flat&logo=git&logoColor=white)
+![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=flat&logo=notion&logoColor=white)
+
 
 <h3 align="left">🔥   My Stats :</h3>
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=AppleBoiy&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=AppleBoiy&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height=150" alt="languages graph"  />
 </div>
+
+
