@@ -22,10 +22,14 @@ Hey there, I'm CJ from Thailand! Currently, I'm a Second-Year Computer Science S
 
 I'm on a never-ending quest for knowledge and thrive in the world of technology and computer science. Constantly exploring and staying ahead in this dynamic field brings me immense joy and fulfillment.
 
-### 🚀 What I'm Up To
+### 🎓 Current College Pursuits
 
-- I'm currently working on [cms](https://github.com/AppleBoiy/cms)
-- I'm currently learning [CMS (Contest Management System)](http://cms-dev.github.io)
+- Currently, I'm diligently working on [cs203-covid19-analysis](https://github.com/AppleBoiy/cs203-covid19-analysis-2023), a project centered around COVID-19 data analysis as part of my college coursework.
+
+### 📖 Ongoing Learning Focus
+
+- My current focus revolves around refining code quality, grasping the fundamentals of unit testing, and understanding the basics of A/B testing.
+
 
 ## 📃 Skills
 
