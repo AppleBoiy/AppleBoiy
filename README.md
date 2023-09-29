@@ -22,7 +22,7 @@ Hey there, I'm CJ from Thailand! Currently, I'm a Second-Year Computer Science S
 
 I'm on a never-ending quest for knowledge and thrive in the world of technology and computer science. Constantly exploring and staying ahead in this dynamic field brings me immense joy and fulfillment.
 
-### 🎓 Current College Pursuits
+### 🎓 What I'm up
 
 - Currently, I'm diligently working on [cs203-covid19-analysis](https://github.com/AppleBoiy/cs203-covid19-analysis-2023), a project centered around COVID-19 data analysis as part of my college coursework.
 
@@ -39,7 +39,7 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 - Problem solver, always up for a coding challenge
 - Passionate about teaching, coaching, and learning
 
-## 💻 Languages
+### 💻 Languages
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="40" alt="bash logo"  />
   <img width="12" />
@@ -52,7 +52,7 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 </div>
 
 
-## 🛠️ Utils
+### 🛠️ Utils
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg" height="40" alt="pytest logo"  />
   <img width="12" />
