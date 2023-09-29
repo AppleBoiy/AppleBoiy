@@ -31,7 +31,7 @@ I'm on a never-ending quest for knowledge and thrive in the world of technology 
 - My current focus revolves around refining code quality, grasping the fundamentals of unit testing, and understanding the basics of A/B testing.
 
 
-## 📃 Skills
+### 📃 Skills
 
 - Python enthusiast
 - Proficient in unit testing, ensuring code quality
