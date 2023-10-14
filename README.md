@@ -20,11 +20,13 @@
 
 Hey there, I'm CJ from Thailand! Currently, I'm a Second-Year Computer Science Student at [Chiang Mai University, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
-I'm on a never-ending quest for knowledge and thrive in the world of technology and computer science. Constantly exploring and staying ahead in this dynamic field brings me immense joy and fulfillment.
+### 🔨 Next Projects
 
-### 📖 Ongoing Learning Focus
+I'm currently working on two exciting projects:
 
-- My current focus revolves around refining code quality, grasping the fundamentals of unit testing, and understanding the basics of A/B testing.
+1. **[bib-detection](https://github.com/AppleBoiy/bib-detection)**: This project is a number plate detector designed specifically for marathon runners. It's in the development stage and will be launching soon, making it easier for marathon organizers to manage and track participants.
+
+2. **[pretree](https://github.com/AppleBoiy/pretree)**: This project is a prerequisite tree for study courses. It will help students visualize and navigate the dependencies between different courses. Currently in the planning stage, it aims to simplify academic planning for students.
 
 
 ### 📃 Skills
