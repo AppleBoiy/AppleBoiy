@@ -2,6 +2,7 @@
   <img height="150" src="https://camo.githubusercontent.com/62da68eb62b1e5f175f7d1f0191dd89a653d7908feb22d37d4a0ab07365d6791/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4d3967624264396e6244724f5475314d71782f67697068792e676966"  />
 </div>
 
+
 ###
 
 <div align="center">
@@ -17,6 +18,8 @@
 </div>
 
 <h1 align="center">Bonjour! 👋</h1>
+
+# My donut 🍩✨ [Can't see?](https://github.com/AppleBoiy/donut.go)
 
 Hey there, I'm CJ from Thailand! Currently, I'm a Second-Year Computer Science Student at [Chiang Mai University, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
