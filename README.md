@@ -32,7 +32,6 @@ I'm currently working on two exciting projects:
 ### 📃 Skills
 
 - Python enthusiast
-- Proficient in unit testing, ensuring code quality
 - Experienced with Git version control
 - Problem solver, always up for a coding challenge
 - Passionate about teaching, coaching, and learning
