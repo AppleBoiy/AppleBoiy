@@ -17,11 +17,10 @@
   </a>
 </div>
 
-<h1 align="center">Bonjour! 👋</h1>
 
 ## My donut [🍩✨](https://github.com/AppleBoiy/donut.go)
 
-Hey there, I'm CJ from Thailand! Currently, I'm a Second-Year Computer Science Student at [Chiang Mai University, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
+Bonjour! 👋, I'm CJ from Thailand! Currently, I'm a Second-Year Computer Science Student at [Chiang Mai University, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
 ### 🔨 Next Projects
 
