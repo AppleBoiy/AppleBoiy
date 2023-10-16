@@ -18,11 +18,10 @@
 </div>
 
 
-##
+### **Bonjour! 👋**,
+I'm CJ from Thailand! Currently, I'm a Second-Year Computer Science Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
-**Bonjour! 👋**, I'm CJ from Thailand! Currently, I'm a Second-Year Computer Science Student at [Chiang Mai University, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
-
-### 🔨 Next Projects
+#### 🔨 Next Projects
 
 I'm currently working on two exciting projects:
 
