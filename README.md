@@ -33,7 +33,7 @@ Right now, I'm excited about two projects:
 
 - **Database Decisions for pre3 (MongoDB, PostgreSQL)**: I'm figuring out how to store course information and display it in an easy-to-understand tree in our [pre3](https://github.com/AppleBoiy/pre3) project.
 
-- **Testing Programming Languages**: I'm exploring which programming languages are faster and more efficient for course projects. Specifically, I'm looking at [Go](https://go.dev) (versions 1.18 and 1.2x) and [Python](https://www.python.org) (versions 3.8.10 and 3.10.x). It's like a speed test for programming!
+- **Testing Programming Languages**: I'm exploring which version of programming languages are best for course practice. Specifically, I'm looking at [Go](https://go.dev) (versions 1.18 and 1.2x) and [Python](https://www.python.org) (versions 3.8.10 and 3.10.x). It's like a speed test for programming!
 
 - **Exploring Different Languages**: I started learning how to code last year and I'm trying different programming languages on various projects to discover what I enjoy the most.
 
