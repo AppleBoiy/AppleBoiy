@@ -19,7 +19,7 @@
 
 
 ### **Bonjour! 👋**,
-I'm CJ from Thailand! Currently, I'm a Second-Year Computer Science Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
+I'm CJ. Currently, I'm a Second-Year Computer Science Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
 #### 🔨 Next Projects
 
