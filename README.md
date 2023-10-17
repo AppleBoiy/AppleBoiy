@@ -18,16 +18,25 @@
 </div>
 
 
-### **Bonjour! 👋**,
-I'm CJ. Currently, I'm a Second-Year Computer Science Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
+## **Hello! 👋**,
+I'm CJ, a Second-Year Computer Science Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
-#### 🔨 Next Projects
+### 🚀 My Upcoming Projects
 
-I'm currently working on two exciting projects:
+Right now, I'm excited about two projects:
 
-1. **[bib-detection](https://github.com/AppleBoiy/bib-detection)**: This project is a number plate detector designed specifically for marathon runners. It's in the development stage and will be launching soon, making it easier for marathon organizers to manage and track participants.
+1. **[bib-detection](https://github.com/AppleBoiy/bib-detection)**: I'm working on a number plate detector designed for marathon runners. It's still in development, and it will help marathon organizers easily manage and track participants.
 
-2. **[pre3](https://github.com/AppleBoiy/pre3)**: This project is a prerequisite tree for study courses. It will help students visualize and navigate the dependencies between different courses. Currently in the planning stage, it aims to simplify academic planning for students.
+2. **[pre3](https://github.com/AppleBoiy/pre3)**: This project aims to create a prerequisite tree for study courses. It's in the planning stage and will simplify academic planning for students.
+
+### **What's on My To-Do List**
+
+- **Database Decisions for pre3 (MongoDB, PostgreSQL)**: I'm figuring out how to store course information and display it in an easy-to-understand tree in our [pre3](https://github.com/AppleBoiy/pre3) project.
+
+- **Testing Programming Languages**: I'm exploring which programming languages are faster and more efficient for course projects. Specifically, I'm looking at [Go](https://go.dev) (versions 1.18 and 1.2x) and [Python](https://www.python.org) (versions 3.8.10 and 3.10.x). It's like a speed test for programming!
+
+- **Exploring Different Languages**: I started learning how to code last year and I'm trying different programming languages on various projects to discover what I enjoy the most.
+
 
 <div align="right">
   <a href="https://github.com/AppleBoiy/donut.go">[🍩✨]</a>
