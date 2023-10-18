@@ -31,7 +31,7 @@ Right now, I'm excited about two projects:
 
 ### **What's on My To-Do List**
 
-- [**cs-wiki101**](https://github.com/AppleBoiy/cs-wiki101): I've made a lot of changes to my wiki and have not updated [the wiki's repository](https://github.com/AppleBoiy/cs-wiki101/wiki) yet. However, I have a plan to update this wiki in the future.
+- [**cs-wiki101**](https://github.com/AppleBoiy/cs-wiki101): I've made a lot of changes to my wiki and have not updated [the wiki's repository](https://github.com/AppleBoiy/cs-wiki101/wiki) yet. However, I have a plan to update it in the near future.
 
 - **Database Decisions for pre3 (MongoDB, PostgreSQL)**: I'm figuring out how to store course information and display it in an easy-to-understand tree in our [pre3](https://github.com/AppleBoiy/pre3) project.
 
