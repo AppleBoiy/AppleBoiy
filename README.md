@@ -17,27 +17,27 @@
   </a>
 </div>
 
-
 ## **Hello! 👋**,
-I'm CJ, a Second-Year Computer Science Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
+
+I'm CJ, a second-year computer science student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
 ### 🚀 My Upcoming Projects
 
 Right now, I'm excited about two projects:
 
-1. **[bib-detection](https://github.com/AppleBoiy/bib-detection)**: I'm working on a number plate detector designed for marathon runners. It's still in development, and it will help marathon organizers easily manage and track participants.
+1. **[bib-detection](https://github.com/AppleBoiy/bib-detection)**: I'm working on a number plate detector designed for marathon runners. It's still in development and will help marathon organizers manage and track participants easily.
 
 2. **[pre3](https://github.com/AppleBoiy/pre3)**: This project aims to create a prerequisite tree for study courses. It's in the planning stage and will simplify academic planning for students.
 
 ### **What's on My To-Do List**
 
-- [**cs-wiki101**](https://github.com/AppleBoiy/cs-wiki101): I've made a lot of changes to my wiki and have not updated [the wiki's repository](https://github.com/AppleBoiy/cs-wiki101/wiki) yet. However, I have a plan to update it in the near future.
+- [**cs-wiki101**](https://github.com/AppleBoiy/cs-wiki101): I've made several changes to my wiki but haven't updated [the wiki's repository](https://github.com/AppleBoiy/cs-wiki101/wiki) yet. However, I have a plan to update it soon.
 
 - **Database Decisions for pre3 (MongoDB, PostgreSQL)**: I'm figuring out how to store course information and display it in an easy-to-understand tree in our [pre3](https://github.com/AppleBoiy/pre3) project.
 
-- **Testing Programming Languages**: I'm exploring which version of programming languages are best for course practice. Specifically, I'm looking at [Go](https://go.dev) (versions 1.18 and 1.2x) and [Python](https://www.python.org) (versions 3.8.10 and 3.10.x). It's like a speed test for programming!
+- **Testing Programming Languages**: I'm exploring different versions of programming languages for course practice, like [Go](https://go.dev) (versions 1.18 and 1.2x) and [Python](https://www.python.org) (versions 3.8.10 and 3.10.x). It's like a speed test for programming!
 
-- **Exploring Different Languages**: I started learning how to code last year and I'm trying different programming languages on various projects to discover what I enjoy the most.
+- **Exploring Different Projects**: I started learning how to code last year, and I'm trying various projects on [my playground](https://github.com/ape-playground) to discover what I enjoy the most.
 
 <div align="right">
   <a href="https://github.com/AppleBoiy/donut.go">[🍩✨]</a>
