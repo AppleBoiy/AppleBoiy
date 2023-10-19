@@ -17,7 +17,7 @@
   </a>
 </div>
 
-## **Hello! 👋**,
+## **Bello! 👋**,
 
 I'm CJ, a second-year computer science student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
