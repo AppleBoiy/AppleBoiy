@@ -33,7 +33,7 @@ Right now, I'm excited about two projects:
 
 - [**cs-wiki101**](https://github.com/AppleBoiy/cs-wiki101): I've made several changes to my wiki, but I haven't updated [the wiki's repository](https://github.com/AppleBoiy/cs-wiki101/wiki) yet. I'm also planning to update it through [JetBrains/Writerside](https://www.jetbrains.com/writerside/) and might make more updates in the future.
 
-- **Database Decisions for pre3 (MongoDB, PostgreSQL)**: I'm figuring out how to store course information and display it in an easy-to-understand tree in our [pre3](https://github.com/AppleBoiy/pre3) project.
+- **Database Decisions for pre3**: I'm figuring out how to store course information and display it in an easy-to-understand tree in our [pre3](https://github.com/AppleBoiy/pre3) project.
 
 - **Testing Programming Languages**: I'm exploring different versions of programming languages for course practice, like [Go](https://go.dev) (versions 1.18 and 1.2x) and [Python](https://www.python.org) (versions 3.8.10 and 3.10.x). It's like a speed test for programming!
 
