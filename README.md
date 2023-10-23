@@ -25,7 +25,7 @@ I'm CJ, a second-year computer science student at [CMU, Thailand](https://www.go
 
 Right now, I'm excited about two projects:
 
-1. **[bib-detection](https://github.com/AppleBoiy/bib-detection)**: I'm working on a number plate detector designed for marathon runners. It's still in development and will help marathon organizers manage and track participants easily.
+1. **[bib-detection](https://github.com/CSCMU-65s/bib-detection)**: I'm working on a number plate detector designed for marathon runners. It's still in development and will help marathon organizers manage and track participants easily.
 
 2. **[pre3](https://github.com/AppleBoiy/pre3)**: This project aims to create a prerequisite tree for study courses. It's in the planning stage and will simplify academic planning for students.
 
