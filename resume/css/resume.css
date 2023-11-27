@@ -1,0 +1,102 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h3 > span {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+article p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+article > div {
+    margin-left: 20px;
+}
+
+article > div > p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+div .skills p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.highlight {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.education {
+    display: flex;
+}
+
+div .item > h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.education strong {
+    font-weight: bold;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item h3 {
+    margin: 0;
+}
+
+.item .date {
+    margin: 0;
+    text-align: right;
+}
+
+.teaching-details p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.teaching-details ul {
+    margin-top: 5px;
+}
+
+.teaching-details li {
+    margin-bottom: 5px;
+}
+
+.teaching-details strong {
+    font-weight: bold;
+}
