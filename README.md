@@ -15,24 +15,9 @@
 
 ## **Bello! 👋**,
 
-I'm CJ, a second-year computer science student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
+I'm CJ, a CS Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
-### 🚀 My Upcoming Projects
-
-Right now, I'm excited about two projects:
-
-1. **[pre3](https://github.com/AppleBoiy/pre3)**: This project aims to create a prerequisite tree for study courses. It's in the planning stage and will simplify academic planning for students.
-
-2. **[kiwis](https://github.com/AppleBoiy/kiwis)**: 
-The moment I started reading the book named "[Crack the Coding Interview (6TH Edition)](https://www.crackingthecodinginterview.com)" by [Gayle Laakmann McDowell](https://www.gayle.com), I realized that I didn't know enough about it, so I set out to learn about the things I found in this book, such as keywords, data structure, etc., to get better at it. 
-
-3. **[iNav](https://github.com/AppleBoiy/iNav)**: Indoor AR Navigator
-
-### **What's on My To-Do List**
-
-- [**cs-wiki101**](https://github.com/AppleBoiy/cs-wiki101): I've made several changes to my wiki, but I haven't updated [the wiki's repository](https://github.com/AppleBoiy/cs-wiki101/wiki) yet. I'm also planning to update it through [JetBrains/Writerside](https://www.jetbrains.com/writerside/) and might make more updates in the future.
-
-- **Exploring Different Projects**: I started learning how to code last year, and I'm trying various projects on [my playground](https://github.com/ape-playground) to discover what I enjoy the most.
+<I'm currently on break, So I will come back to this later.>
 
 <div align="right">
   <a href="https://github.com/AppleBoiy/donut.go">[🍩✨]</a>
