@@ -17,7 +17,7 @@
 
 I'm CJ, a CS Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
-<I'm currently on break, So I will come back to this later.>
+<I'm currently focus on private project>
 
 <div align="right">
   <a href="https://github.com/AppleBoiy/donut.go">[🍩✨]</a>
