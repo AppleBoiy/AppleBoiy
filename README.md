@@ -1,5 +1,16 @@
 
-###
+## **Bello! 👋**,
+
+
+
+<div align="center">
+
+I'm CJ, a CS Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=AppleBoiy&theme=swift&hide_border=false" />
+
+<I'm currently focused on private repos, so I will be back soon!>
+</div>
 
 <div align="center">
   <a href="https://www.linkedin.com/in/chaipat-jainan/" target="_blank">
@@ -11,14 +22,10 @@
   <a href="https://discordapp.com/users/436587555979264030" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="discord logo"  />
   </a>
+
 </div>
 
-## **Bello! 👋**,
-
-I'm CJ, a CS Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
-
-<I'm currently focused on private repos, so I will be back soon!>
 
 <div align="right">
-  <a href="https://github.com/AppleBoiy/donut.go">[🍩✨]</a>
+  <a href="https://kiwis.vercel.app">[📑✨]</a>
 </div>
