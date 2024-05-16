@@ -5,7 +5,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/AppleBoiy/readme-stat/46f12c45ea0b038305ae501f66cf76a504772bbc/generated/overview.svg?token=A3UMU7KEV7VNJCEG7UEZLK3GIYU5G" />
+<img src="https://raw.githubusercontent.com/AppleBoiy/readme-stat/46f12c45ea0b038305ae501f66cf76a504772bbc/generated/overview.svg" />
 
 <I'm currently focused on private repos, so I will be back soon!>
 </div>
