@@ -5,7 +5,9 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/AppleBoiy/readme-stat/46f12c45ea0b038305ae501f66cf76a504772bbc/generated/overview.svg" />
+I'm CJ, a CS Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=AppleBoiy&theme=swift&hide_border=false" />
 
 <I'm currently focused on private repos, so I will be back soon!>
 </div>
