@@ -4,10 +4,13 @@
 
 
 <div align="center">
+<img src="https://raw.githubusercontent.com/AppleBoiy/readme-stat/abba30e7e700473f49b218e81b96cf248dcf51a0/generated/overview.svg?token=A3UMU7ISPZJRHVK5EIWMI6DGJNDLM" />
 
-I'm CJ, a CS Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
+</div>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=AppleBoiy&theme=swift&hide_border=false" />
+<div align="center">
+  
+Hi, I'm Chaipat a CS Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
 <I'm currently focused on private repos, so I will be back soon!>
 </div>
