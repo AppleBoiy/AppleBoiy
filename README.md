@@ -4,7 +4,7 @@
 
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/AppleBoiy/readme-stat/abba30e7e700473f49b218e81b96cf248dcf51a0/generated/overview.svg" />
+<img src="https://raw.githubusercontent.com/AppleBoiy/readme-stat/fb5336aab91be8aaf8f8dc022a30aed6ab65305a/generated/overview.svg" />
 
 </div>
 
