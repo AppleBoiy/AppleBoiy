@@ -4,7 +4,8 @@
 
 <div align="center">
   <h1><b>👋 Bello!</b></h1>
-<img src="https://raw.githubusercontent.com/AppleBoiy/readme-stat/fb5336aab91be8aaf8f8dc022a30aed6ab65305a/generated/overview.svg" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=AppleBoiy&theme=swift&hide_border=false" />
+
 
 </div>
 
