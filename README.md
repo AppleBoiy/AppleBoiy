@@ -1,7 +1,3 @@
-
-
-
-
 <div align="center">
   <h1><b>👋 Bello!</b></h1>
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=AppleBoiy&theme=swift&hide_border=false" />
@@ -11,9 +7,11 @@
 
 <div align="center">
   
+
 Hi, I'm Chaipat a CS Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
-<I'm currently focused on private repos, so I will be back soon!>
+  <p><blockquote>"Guess what? Today I discovered that in c++ <mark>I'm the only one who uses camelCase instead of snake_case!</mark>"</blockquote></p>
+
 </div>
 
 <div align="center">
@@ -25,10 +23,7 @@ Hi, I'm Chaipat a CS Student at [CMU, Thailand](https://www.google.com/search?cl
   <a href="https://discordapp.com/users/436587555979264030" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="discord logo"  />
   </a>
-  
-
 </div>
-
 
 <div align="right">
   <a href="https://kiwis.vercel.app">[📑✨]</a>
