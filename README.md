@@ -10,7 +10,7 @@
 
 Hi, I'm Chaipat a CS Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
-<p><blockquote>I'm so confused now whether I should use camelCase or snake_case for C++ code. 🤔</blockquote></p>
+<p><blockquote>What I cannot create, I do not understand — Richard Feynman.</blockquote></p>
 
 </div>
 
