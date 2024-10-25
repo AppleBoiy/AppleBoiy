@@ -23,7 +23,7 @@ jobs:
           config_order:  music
           plugin_music: yes
           plugin_music_playlist: ${{ secrets.PLAYLIST }}
-          plugin_music_limit: 9
+          plugin_music_limit: 4
 
 
       - name: 🦑 General
@@ -35,8 +35,6 @@ jobs:
           base: header
           base_indepth: yes
           config_order: base.header, isocalendar, languages, notable, discussions, topics
-          output_action: gist
-          committer_gist: ${{ secrets.METRICS_TOKEN }}
           plugin_isocalendar: yes
           plugin_languages: yes
           plugin_languages_ignored: jupyter, shader
