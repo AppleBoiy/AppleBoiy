@@ -1,6 +1,6 @@
 <div align="center">
   <h1><b>👋 Bello!</b></h1>
-![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AppleBoiy&theme=nord_bright)
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AppleBoiy&theme=nord_bright" />
 
 
 </div>
