@@ -1,6 +1,6 @@
 <div align="center">
   <h1><b>👋 Bello!</b></h1>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=AppleBoiy&theme=swift&hide_border=false" />
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AppleBoiy&theme=nord_bright)
 
 
 </div>
