@@ -2,7 +2,6 @@
   <h1><b>👋 Bello!</b></h1>
 <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AppleBoiy&theme=nord_bright" />
 
-
 </div>
 
 <div align="center">
@@ -26,5 +25,5 @@ Hi, I'm Chaipat a CS Student at [CMU, Thailand](https://www.google.com/search?cl
    
 </div>
 <div align="right">
-  <a href="https://kiwis.vercel.app">[📑✨]</a>
+  <a href="https://gist.github.com/AppleBoiy/21abc562a7eaac1ee217b8a769a6ecdc">[📑✨]</a>
 </div>
