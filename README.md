@@ -9,7 +9,7 @@
 
 Hi, I'm Chaipat a CS Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
-<p><blockquote>What I cannot create, I do not understand — Richard Feynman.</blockquote></p>
+<p><blockquote>POW! - Isha.</blockquote></p>
 
 </div>
 
