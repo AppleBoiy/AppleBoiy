@@ -7,9 +7,9 @@
 <div align="center">
   
 
-Hi, I'm Chaipat a CS Student at [CMU, Thailand](https://www.google.com/search?client=safari&rls=en&q=chiang+mai+university&ie=UTF-8&oe=UTF-8).
 
-<p><blockquote>CURRENTLY I'm focused on my research, It's gonna take a while.</blockquote></p>
+
+<p><blockquote>"Et à présent, Nathanaël, jette mon livre. Émancipe-t'en. Quitte-moi."</blockquote></p>
 
 </div>
 
