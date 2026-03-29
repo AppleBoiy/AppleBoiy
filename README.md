@@ -5,12 +5,18 @@
 </div>
 
 <div align="center">
-  
-
-
-
-<p><blockquote>"Et à présent, Nathanaël, jette mon livre. Émancipe-t'en. Quitte-moi."</blockquote></p>
-
+  <div align="center">
+  <br>
+  <blockquote align="center">
+    <p>
+      <em>"Et à présent, Nathanaël, jette mon livre. Émancipe-t'en. Quitte-moi."</em><br><br>
+      "And now, Nathanaël, throw away my book. Free yourself from it. Leave me."<br><br>
+      「そして今、ナタナエルよ、私の本を捨て去りなさい。それから解放され、私から離れなさい。」
+    </p>
+  </blockquote>
+  <p align="right">— <b>André Gide</b>, <i>Fruits of the Earth</i></p>
+  <br>
+</div>
 </div>
 
 <div align="center">
