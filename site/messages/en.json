@@ -1,0 +1,394 @@
+{
+  "Site": {
+    "name": "Chaipat Jainan",
+    "title": "Chaipat Jainan — Research Engineer",
+    "description": "Computer science researcher working on knowledge graphs, ontology engineering, and data pipelines for high-performance computing.",
+    "nav": {
+      "label": "Sections",
+      "home": "Front Page",
+      "projects": "Projects",
+      "cv": "Curriculum Vitae",
+      "contact": "Letters",
+      "skip": "Skip to content"
+    },
+    "language": "Language",
+    "languageNames": {
+      "en": "English",
+      "th": "ไทย",
+      "ja": "日本語"
+    },
+    "footer": {
+      "contact": "Contact",
+      "elsewhere": "Elsewhere",
+      "top": "Back to the masthead",
+      "rights": "Chaipat Jainan",
+      "printed": "Printed and published in Chiang Mai, Thailand"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "body": "The page you were looking for does not exist or has moved.",
+      "home": "Return home"
+    }
+  },
+  "Home": {
+    "ear": {
+      "left": "Forecast: clear skies, excellent seeing",
+      "right": "Late edition · Free of charge"
+    },
+    "editions": "Editions",
+    "tagline": "All the structure that’s fit to print",
+    "lead": {
+      "kicker": "Research",
+      "headline": "Local Engineer Finds Structure in Scattered Data",
+      "deck": "Chiang Mai researcher builds knowledge graphs, ontologies and data pipelines — and now turns machine learning on the history of galaxies",
+      "byline": "By a Staff Correspondent",
+      "dateline": "CHIANG MAI —",
+      "body": [
+        "Chaipat Jainan, a final-year computer science student at Chiang Mai University, has spent recent years teaching machines to reason about untidy information: public health services, unstructured text and, most recently, millions of stars.",
+        "Since April 2026, Jainan has served as a Research Assistant at the National Astronomical Research Institute of Thailand (NARIT), building HDBSCAN clustering pipelines and AutoGluon models to reconstruct how galaxies merged.",
+        "Earlier work led to the Japan Advanced Institute of Science and Technology, where large datasets were processed on the KAGAYAKI supercomputer to build knowledge graphs for the safety testing of autonomous vehicles.",
+        "Jainan has also worked on a second supercomputer, LANTA at the Thai Supercomputer Center (ThaiSC), trading PBS for Slurm job scheduling — and picking up, along the way, the particular craft of moving very large datasets on and off the machines.",
+        "“Take something sprawling and give it a structure you can reason over,” is how the approach might be summarised — whether the subject is a hospital, a paragraph, or a spiral arm."
+      ],
+      "caption": "SPIRAL STRUCTURE — A halftone study of a galaxy of the kind now under examination at NARIT."
+    },
+    "brief": {
+      "title": "In Brief",
+      "items": [
+        {
+          "head": "Fields of study",
+          "text": "Knowledge graphs and ontology engineering (OWL, SPARQL, SWRL)."
+        },
+        {
+          "head": "Instruments",
+          "text": "Scientific computing on HPC clusters — KAGAYAKI, PBS job scheduling."
+        },
+        {
+          "head": "Current beat",
+          "text": "Machine learning for galactic archaeology — HDBSCAN, AutoGluon."
+        }
+      ]
+    },
+    "work": {
+      "title": "Selected Work",
+      "subtitle": "Dispatches from the laboratory",
+      "more": "Full story",
+      "all": "See every project in Section B"
+    },
+    "ad": {
+      "kicker": "Advertisement",
+      "script": "Refreshingly Structured!",
+      "line": "Research collaborations & graduate opportunities",
+      "sub": "Enjoy a good conversation — every letter is read.",
+      "cta": "Write today"
+    },
+    "record": {
+      "title": "Positions Held",
+      "subtitle": "The record",
+      "cv": "Read the complete curriculum vitae",
+      "items": [
+        {
+          "period": "2026 —",
+          "title": "Research Assistant",
+          "org": "National Astronomical Research Institute of Thailand"
+        },
+        {
+          "period": "2025",
+          "title": "Research Intern, KnOWLab",
+          "org": "Japan Advanced Institute of Science and Technology"
+        },
+        {
+          "period": "2024 — 25",
+          "title": "Software Developer (Contract)",
+          "org": "Chiang Mai University"
+        },
+        {
+          "period": "2022 — 25",
+          "title": "Teaching Assistant",
+          "org": "Chiang Mai University"
+        }
+      ]
+    },
+    "letters": {
+      "title": "Letters to the Editor",
+      "text": "Correspondence on research, collaborations and positions is welcome.",
+      "form": {
+        "name": "Your name",
+        "namePlaceholder": "Ada Lovelace",
+        "message": "Your letter",
+        "messagePlaceholder": "Dear Editor…",
+        "send": "Post the letter",
+        "copied": "Address copied",
+        "subject": "A letter from your readers",
+        "note": "Posting opens your email app with the letter ready to send."
+      }
+    },
+    "place": "Chiang Mai, Thailand"
+  },
+  "Projects": {
+    "title": "Projects",
+    "intro": "Research software, tools and systems — from formal ontologies to astronomy viewers.",
+    "labels": {
+      "year": "Year",
+      "role": "Context",
+      "stack": "Built with",
+      "links": "Links",
+      "live": "Visit site",
+      "source": "Source code",
+      "overview": "Overview",
+      "outcome": "Outcome",
+      "back": "All projects",
+      "next": "Next project",
+      "previous": "Previous",
+      "pager": "More projects",
+      "factFile": "Fact File",
+      "byline": "From the laboratory",
+      "previousStory": "Previous story",
+      "nextStory": "Next story",
+      "backSection": "Back to Section B",
+      "continued": "Full story"
+    },
+    "items": {
+      "m81-ddo66": {
+        "title": "Ultra-faint Substructure in M81/M82 and the Origin of DDO 66",
+        "category": "Galactic archaeology",
+        "role": "Internship research · NARIT & Chiang Mai University",
+        "summary": "A ten-week internship at NARIT on two open questions: can ultra-faint stellar substructure beyond a published DBSCAN baseline be recovered around M81 and M82, and where did the dwarf galaxy DDO 66 (Holmberg IX) come from? The work spans 5.9 million resolved stars in 62 HST fields, crowded-field photometry, H I data-cube analysis and GPU simulation on the LANTA supercomputer.",
+        "outcome": "Both questions remain open, and the report says exactly why. Delivered: a validated GPU N-body benchmark (500,000 particles on one A100 at 3.2 TFLOP/s, energy drift 8.6 × 10⁻⁴), a reproducible DOLPHOT configuration, an H I decomposition robust across four masking treatments, and a set of clean, pre-registered negative results."
+      },
+      "onto-phsrs": {
+        "title": "Ontology-Augmented Health Recommendation",
+        "category": "Ontology engineering",
+        "role": "Independent research · Chiang Mai University",
+        "summary": "A semantic recommendation system for Thai public health services. An OWL-DL ontology with 85 classes and 411 individuals, integrated with SWRL reasoning and a SPARQL query interface.",
+        "outcome": "Matches user health profiles to service capabilities through explicit logic rather than keyword search — validated against every competency question with 38 SWRL rules and 40 SPARQL queries."
+      },
+      "knowledge-graph-jaist": {
+        "title": "Knowledge Graphs from Unstructured Data",
+        "category": "Knowledge graphs",
+        "role": "Research intern · JAIST, Japan",
+        "summary": "A pipeline that constructs knowledge graphs from unstructured sources to support safety testing of autonomous driving systems, processing large datasets on the KAGAYAKI HPC cluster.",
+        "outcome": "Presented at the JAIST Research Program 2025; automated semantic parsing reduced manual test-case generation."
+      },
+      "galaxy-figure-archive": {
+        "title": "M81 / M82 Research Figure Archive",
+        "category": "Galactic archaeology",
+        "role": "Personal research tool",
+        "summary": "An archive for resolved-stellar-population analyses of M81 and M82 — density models, background estimates, substructure detections, and validation figures, each with full axes, legends, and provenance.",
+        "outcome": "Brought the analysis record together into one searchable, stage-aware archive with source links and side-by-side figure comparison."
+      },
+      "fits-viewer": {
+        "title": "FITS Astronomy Data Viewer",
+        "category": "Scientific visualisation",
+        "role": "Personal project",
+        "summary": "An in-browser viewer for FITS files. A Canvas renderer displays CCD imagery and star catalogues of thousands of points without leaving the browser.",
+        "outcome": "A client-side FITS parser with optimised coordinate mapping for high-dimensional sky data."
+      },
+      "graph-explorer": {
+        "title": "Knowledge Graph Explorer",
+        "category": "Knowledge graphs",
+        "role": "Personal project",
+        "summary": "A graph explorer that maps dependencies between academic papers and technical specifications using D3 force simulations over PostgreSQL.",
+        "outcome": "Real-time adjacency views and relational analysis across research datasets."
+      },
+      "auto-grader": {
+        "title": "Automated Grading System",
+        "category": "Applied systems",
+        "role": "Software developer (contract) · Chiang Mai University",
+        "summary": "Backend for a departmental grading system: Docker sandboxes execute submissions and the GPT-3.5 API generates feedback on code quality.",
+        "outcome": "Served 80+ students per course and cut processing time by 80% while keeping feedback consistent."
+      },
+      "word-games": {
+        "title": "Word Games",
+        "category": "Algorithms",
+        "role": "Personal project",
+        "summary": "Client-side solvers for Boggle and Spelling Bee built on prefix trees and backtracking search, backed by a cascading dictionary resolver.",
+        "outcome": "Instant, in-browser validation using Trie lookups and depth-first search."
+      },
+      "kiwis": {
+        "title": "Kiwis — Course Handbook",
+        "category": "Education",
+        "role": "Teaching assistant · Chiang Mai University",
+        "summary": "A documentation hub for systems programming courses, with Makefile-driven builds that generate and publish software setup guides.",
+        "outcome": "Used by 100+ students across 5 courses; standardised the assembly programming environment."
+      }
+    },
+    "section": "Section B",
+    "heading": "The Project Pages"
+  },
+  "Resume": {
+    "metaTitle": "Curriculum Vitae",
+    "metaDescription": "Chaipat Jainan — computer science researcher working on knowledge graphs, ontology engineering, and data pipelines for high-performance computing.",
+    "eyebrow": "Curriculum Vitae",
+    "headline": "Computer science researcher building knowledge graphs, ontologies, and data pipelines for high-performance computing.",
+    "contact": {
+      "location": "Based in",
+      "locationValue": "Chiang Mai, Thailand",
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
+    "sections": {
+      "profile": "Profile",
+      "experience": "Experience",
+      "education": "Education",
+      "project": "Selected Project",
+      "skills": "Skills",
+      "notes": "Field Notes",
+      "top": "Overview"
+    },
+    "profile": "Final-year computer science student with research experience in computational data analysis and AI systems. Proficient in Python, MATLAB, and high-performance computing environments, with a track record of processing large-scale datasets, building automated analysis pipelines, and conducting research at JAIST. Hands-on with two HPC systems — KAGAYAKI at JAIST (PBS) and LANTA at ThaiSC (Slurm) — including moving large research datasets on and off the clusters.",
+    "experience": {
+      "narit": {
+        "role": "Research Assistant",
+        "org": "National Astronomical Research Institute of Thailand (NARIT)",
+        "place": "Thailand",
+        "period": "Apr 2026 — Present",
+        "points": [
+          "Architecting an optimised HDBSCAN clustering pipeline for reconstructing galactic merger histories.",
+          "Implementing AutoGluon-based supervised learning to isolate faint stellar structures within high-dimensional chemodynamical datasets.",
+          "Benchmarked the group’s N-body code on the LANTA supercomputer (ThaiSC) with Slurm, on CPU and GPU nodes: 500,000 particles on one A100 at 3.2 TFLOP/s, with energy and virial checks passing.",
+          "Ran DOLPHOT crowded-field photometry and artificial-star completeness tests on HST imaging of the M81 group — 5.9 million resolved stars across 62 fields.",
+          "Tested the origin of the dwarf galaxy DDO 66 with H I data-cube decomposition and pre-registered hypothesis gates, keeping an auditable provenance ledger across 8 repositories."
+        ]
+      },
+      "jaist": {
+        "role": "Research Intern — KnOWLab",
+        "org": "Japan Advanced Institute of Science and Technology (JAIST)",
+        "place": "Japan",
+        "period": "Apr — Sep 2025",
+        "points": [
+          "Conducted computational research on knowledge graph construction from unstructured data using Python-based analysis pipelines and machine learning techniques.",
+          "Processed large-scale datasets on the KAGAYAKI high-performance computing cluster with PBS job scheduling, implementing automated batch workflows for reproducible research.",
+          "Developed data validation and quality assurance algorithms to ensure research data integrity and constraint compliance across multi-stage processing pipelines."
+        ]
+      },
+      "cmuDev": {
+        "role": "Software Developer (Contract)",
+        "org": "Chiang Mai University",
+        "place": "Thailand",
+        "period": "Apr 2024 — Mar 2025",
+        "points": [
+          "Developed an automated grading system integrating the GPT-3.5 API for 80+ students, with data processing pipelines that reduced processing time by 80%.",
+          "Built database systems and data migration scripts in Python and SQL; designed the system architecture and wrote its technical documentation.",
+          "Implemented containerisation and automated deployment workflows using Docker and CI/CD pipelines."
+        ]
+      },
+      "cmuTa": {
+        "role": "Teaching Assistant",
+        "org": "Department of Computer Science, Chiang Mai University",
+        "place": "Thailand",
+        "period": "Aug 2022 — Mar 2025",
+        "points": [
+          "Developed and maintained an academic knowledge base (kiwis) with Makefile-driven build automation, serving 100+ users; authored bilingual technical documentation adopted across 5 courses."
+        ]
+      }
+    },
+    "education": {
+      "degree": "B.Sc. Computer Science",
+      "school": "Chiang Mai University",
+      "place": "Chiang Mai, Thailand",
+      "period": "Jun 2026",
+      "points": [
+        "GPA 3.1 / 4.0",
+        "Final-year research: JAIST–CMU joint collaboration"
+      ]
+    },
+    "project": {
+      "title": "Ontology-Augmented Thai Public Health Service Recommendation System",
+      "period": "Jan — Mar 2026",
+      "repo": "View repository",
+      "points": [
+        "Designed a domain-specific knowledge base of 85 classes, 411 individuals, and 22 data properties modelling Thai public health services within a formal ontology.",
+        "Developed 38 SWRL reasoning rules and 40 SPARQL queries across four competency domains, validated against every competency question with automated query escalation."
+      ]
+    },
+    "skills": {
+      "languages": "Languages",
+      "computing": "Scientific Computing & HPC",
+      "tools": "Tools & Frameworks",
+      "research": "Research & AI"
+    },
+    "skillValues": {
+      "research": "Knowledge Graphs, Ontology Engineering (OWL, SPARQL), LLM APIs, RAG Systems"
+    },
+    "notesIntro": "Informal write-ups from ongoing work.",
+    "footer": {
+      "rights": "Chaipat Jainan",
+      "updated": "Updated September 2026",
+      "top": "Back to top"
+    },
+    "heading": "Curriculum Vitae",
+    "download": "Download the PDF edition",
+    "kicker": "Classified",
+    "deck": "A complete record of service, study and skills",
+    "record": {
+      "kicker": "Classified",
+      "heading": "The Record",
+      "deck": "A curriculum vitae in two pages: service, study and skills",
+      "glance": "Service at a glance",
+      "present": "Today",
+      "positions": "Positions Held"
+    },
+    "qual": {
+      "kicker": "Classified, continued",
+      "heading": "Qualifications",
+      "certificate": "Be it known that",
+      "certifies": "has read for the degree of",
+      "exchange": "Skills Exchange",
+      "listings": "Today’s listings",
+      "coupon": {
+        "clip": "Clip & keep",
+        "title": "The complete curriculum vitae",
+        "sub": "PDF edition · printer-friendly",
+        "cta": "Download"
+      }
+    }
+  },
+  "Paper": {
+    "volume": "Vol. {volume} — No. {number}",
+    "page": "Page {n}",
+    "pageOf": "Page {n} of {total}",
+    "continued": "Continued on page {n}",
+    "prev": "Previous page",
+    "next": "Next page",
+    "turn": "Turn the page",
+    "sections": {
+      "front": "Front Page",
+      "projects": "Projects",
+      "cv": "Curriculum Vitae",
+      "letters": "Letters"
+    },
+    "inside": {
+      "title": "Inside Today",
+      "projects": "Section B — Projects",
+      "cv": "Curriculum vitae",
+      "letters": "Letters to the editor",
+      "research": "Section B — From the Laboratory",
+      "tools": "Section C — The Workshop",
+      "more": "Further reading"
+    },
+    "pageHeads": {
+      "projects": "Section B — Projects",
+      "cv": "Classified — Curriculum Vitae",
+      "cvMore": "Classified — Curriculum Vitae, continued",
+      "letters": "Letters & Advertisements"
+    },
+    "storyOf": "Story {n} of {total}",
+    "pullQuote": "The outcome",
+    "sectionPages": {
+      "research": {
+        "kicker": "Section B",
+        "heading": "From the Laboratory",
+        "deck": "Research in knowledge graphs, ontologies and the structure of galaxies",
+        "head": "Section B — From the Laboratory"
+      },
+      "tools": {
+        "kicker": "Section C",
+        "heading": "The Workshop",
+        "deck": "Tools, systems and teaching — built to be used every day",
+        "head": "Section C — The Workshop"
+      }
+    }
+  }
+}
