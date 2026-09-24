@@ -9,14 +9,15 @@ The site is one newspaper edition per language, printed as numbered pages on a s
 
 | Page | Content |
 | --- | --- |
-| 1 | Front page: masthead, lead story, Inside Today index, In Brief, poster ad, positions held |
-| 2–3 | Section B: all eight projects printed in full, plus a CV advertisement |
-| 4 | Classified: curriculum vitae (PDF in `public/resume.pdf`) |
-| 5 | Letters to the editor (composes an email) and the back-page advertisement |
+| 1 | Front page: masthead, lead story, an index of every story with its page, poster ad |
+| 2–9 | One project per page: headline, lede, outcome as a pull quote, Fact File |
+| 10–11 | Curriculum vitae (profile and experience; education, project and skills) |
+| 12 | Letters to the editor (composes an email) and the back-page advertisement |
 
+The page plan lives in `src/content/pages.js`, so adding a project adds a page automatically.
 The masthead's "Vol." counts years since 2022 and "No." is the day of the year the edition was
 built (`src/lib/edition.js`). A floating page turner tracks and turns pages. Old routes redirect
-into the paper: `/projects` → page 2, `/projects/<slug>` → that story, `/cv` → page 4.
+into the paper: `/projects` → the first project page, `/projects/<slug>` → that project's page, `/cv` → the CV.
 
 Locales: `en` (default), `th`, `ja`. `/` redirects to the visitor's preferred locale.
 

@@ -328,33 +328,17 @@
     },
     "inside": {
       "title": "Inside Today",
-      "items": [
-        {
-          "label": "Selected work — eight stories",
-          "page": 2
-        },
-        {
-          "label": "Curriculum vitae",
-          "page": 4
-        },
-        {
-          "label": "Letters to the editor",
-          "page": 5
-        }
-      ]
+      "projects": "Section B — Projects",
+      "cv": "Curriculum vitae",
+      "letters": "Letters to the editor"
     },
     "pageHeads": {
-      "projects": "Section B — The Project Pages",
-      "projectsMore": "Section B — Continued",
+      "projects": "Section B — Projects",
       "cv": "Classified — Curriculum Vitae",
+      "cvMore": "Classified — Curriculum Vitae, continued",
       "letters": "Letters & Advertisements"
     },
-    "adCv": {
-      "kicker": "Advertisement",
-      "script": "Take one home!",
-      "line": "The complete CV — PDF edition",
-      "sub": "Printer-friendly. Fits in any briefcase.",
-      "cta": "Download now"
-    }
+    "storyOf": "Story {n} of {total}",
+    "pullQuote": "The outcome"
   }
 }

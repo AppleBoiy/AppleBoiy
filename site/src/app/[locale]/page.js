@@ -3,15 +3,14 @@ import { PROJECTS } from '@/content/projects';
 import { RESUME_EXPERIENCE, RESUME_PROJECT, RESUME_SKILLS } from '@/content/resume';
 import { SITE, stripProtocol } from '@/content/site';
 import { edition as makeEdition } from '@/lib/edition';
+import { PAGES, TOTAL_PAGES, projectPage } from '@/content/pages';
 import Masthead from '@/components/Masthead';
 import Page from '@/components/Page';
 import PageTurner from '@/components/PageTurner';
 import GalaxyPlate from '@/components/GalaxyPlate';
 import ContactForm from '@/components/ContactForm';
 
-const TOTAL = 5;
-
-function Story({ project, t, feature = false }) {
+function Story({ project, index, t, paper }) {
   const { slug } = project;
   const links = [
     project.live && { href: project.live, label: t('labels.live') },
@@ -19,22 +18,55 @@ function Story({ project, t, feature = false }) {
   ].filter(Boolean);
 
   return (
-    <article id={`story-${slug}`} className={`story ${feature ? 'story-feature' : ''}`}>
-      <span className="kicker">{t(`items.${slug}.category`)}</span>
-      <h3>{t(`items.${slug}.title`)}</h3>
-      <p className="byline">{t(`items.${slug}.role`)} · {project.year}</p>
-      <div className={feature ? 'columns columns-2' : 'story-text'}>
-        <p className="dropcap">{t(`items.${slug}.summary`)}</p>
-        <p>{t(`items.${slug}.outcome`)}</p>
+    <article id={`story-${slug}`} className="feature">
+      <header className="feature-head">
+        <p className="feature-meta">
+          <span className="kicker">{t(`items.${slug}.category`)}</span>
+          <span className="byline">{paper('storyOf', { n: index + 1, total: PROJECTS.length })}</span>
+        </p>
+        <h2 className="headline">{t(`items.${slug}.title`)}</h2>
+        <p className="deck">{t(`items.${slug}.role`)} · {project.year}</p>
+      </header>
+
+      <div className="feature-body">
+        <div className="feature-text">
+          <p className="feature-lede dropcap">{t(`items.${slug}.summary`)}</p>
+          <blockquote className="pull-quote">
+            <span className="label">{paper('pullQuote')}</span>
+            <p>{t(`items.${slug}.outcome`)}</p>
+          </blockquote>
+        </div>
+
+        <aside>
+          <h3 className="box-title">{t('labels.factFile')}</h3>
+          <dl className="facts">
+            <div>
+              <dt>{t('labels.year')}</dt>
+              <dd>{project.year}</dd>
+            </div>
+            <div>
+              <dt>{t('labels.role')}</dt>
+              <dd>{t(`items.${slug}.role`)}</dd>
+            </div>
+            <div>
+              <dt>{t('labels.stack')}</dt>
+              <dd>{project.stack.join(', ')}</dd>
+            </div>
+            {links.length > 0 && (
+              <div>
+                <dt>{t('labels.links')}</dt>
+                <dd>
+                  {links.map((link) => (
+                    <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer">
+                      {link.label} ↗
+                    </a>
+                  ))}
+                </dd>
+              </div>
+            )}
+          </dl>
+        </aside>
       </div>
-      <p className="story-facts">
-        <span>{project.stack.join(' · ')}</span>
-        {links.map((link) => (
-          <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer">
-            {link.label} ↗
-          </a>
-        ))}
-      </p>
     </article>
   );
 }
@@ -93,7 +125,7 @@ export default async function Edition({ params }) {
   const paper = await getTranslations('Paper');
   const site = await getTranslations('Site');
   const edition = makeEdition(locale);
-  const pageProps = { total: TOTAL, date: edition.date };
+  const pageProps = { total: TOTAL_PAGES, date: edition.date };
 
   const contacts = [
     { label: tr('contact.email'), value: SITE.email, href: `mailto:${SITE.email}` },
@@ -101,10 +133,16 @@ export default async function Edition({ params }) {
     { label: tr('contact.linkedin'), value: stripProtocol(SITE.linkedin), href: SITE.linkedin },
   ];
 
+  const index = [
+    ...PROJECTS.map((project) => ({ label: tp(`items.${project.slug}.title`), page: projectPage(project.slug) })),
+    { label: paper('inside.cv'), page: PAGES.cv },
+    { label: paper('inside.letters'), page: PAGES.letters },
+  ];
+
   return (
     <>
       {/* ── Page 1: front page ── */}
-      <Page n={1} {...pageProps}>
+      <Page n={PAGES.front} {...pageProps}>
         <Masthead edition={edition} />
         <div className="front">
           <article className="lead">
@@ -132,27 +170,18 @@ export default async function Edition({ params }) {
 
           <aside>
             <h2 className="box-title">{paper('inside.title')}</h2>
+            <p className="inside-group label">{paper('inside.projects')}</p>
             <ol className="inside">
-              {paper.raw('inside.items').map((item) => (
+              {index.map((item) => (
                 <li key={item.page}>
                   <a href={`#page-${item.page}`}>
                     <span>{item.label}</span>
                     <span className="inside-dots" aria-hidden="true" />
-                    <span className="inside-page">{paper('page', { n: item.page })}</span>
+                    <span className="inside-page">{item.page}</span>
                   </a>
                 </li>
               ))}
             </ol>
-
-            <h2 className="box-title" style={{ marginTop: 24 }}>{t('brief.title')}</h2>
-            <ul className="brief">
-              {t.raw('brief.items').map((item) => (
-                <li key={item.head}>
-                  <h4>{item.head}</h4>
-                  <p>{item.text}</p>
-                </li>
-              ))}
-            </ul>
 
             <PosterAd
               kicker={t('ad.kicker')}
@@ -160,64 +189,27 @@ export default async function Edition({ params }) {
               line={t('ad.line')}
               sub={t('ad.sub')}
               cta={t('ad.cta')}
-              href="#page-5"
+              href={`#page-${PAGES.letters}`}
               footnote={SITE.email}
             />
           </aside>
         </div>
-
-        <section className="positions" aria-labelledby="record">
-          <header className="section-head">
-            <h2 id="record">{t('record.title')}</h2>
-            <p>{t('record.subtitle')}</p>
-          </header>
-          <ol className="record record-row">
-            {t.raw('record.items').map((item) => (
-              <li key={`${item.period}-${item.title}`}>
-                <span className="record-period">{item.period}</span>
-                <p className="record-title">{item.title}</p>
-                <p className="record-org">{item.org}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
       </Page>
 
-      {/* ── Pages 2–3: the projects, printed in full ── */}
-      <Page n={2} head={paper('pageHeads.projects')} {...pageProps}>
-        <header className="section-front">
-          <span className="kicker">{tp('section')}</span>
-          <h2 className="headline">{tp('heading')}</h2>
-          <p className="deck">{tp('intro')}</p>
-        </header>
-        <div className="stories">
-          {PROJECTS.slice(0, 4).map((project, i) => (
-            <Story key={project.slug} project={project} t={tp} feature={i === 0} />
-          ))}
-        </div>
-      </Page>
+      {/* ── One page per project ── */}
+      {PROJECTS.map((project, i) => (
+        <Page
+          key={project.slug}
+          n={projectPage(project.slug)}
+          head={`${paper('pageHeads.projects')} · ${tp(`items.${project.slug}.category`)}`}
+          {...pageProps}
+        >
+          <Story project={project} index={i} t={tp} paper={paper} />
+        </Page>
+      ))}
 
-      <Page n={3} head={paper('pageHeads.projectsMore')} {...pageProps}>
-        <div className="stories stories-with-ad">
-          {PROJECTS.slice(4).map((project) => (
-            <Story key={project.slug} project={project} t={tp} />
-          ))}
-          <div className="story story-ad">
-            <PosterAd
-              kicker={paper('adCv.kicker')}
-              script={paper('adCv.script')}
-              line={paper('adCv.line')}
-              sub={paper('adCv.sub')}
-              cta={paper('adCv.cta')}
-              href={SITE.resume}
-              download={SITE.resumeFilename}
-            />
-          </div>
-        </div>
-      </Page>
-
-      {/* ── Page 4: curriculum vitae ── */}
-      <Page n={4} head={paper('pageHeads.cv')} {...pageProps}>
+      {/* ── Curriculum vitae, two pages ── */}
+      <Page n={PAGES.cv} head={paper('pageHeads.cv')} {...pageProps}>
         <header className="cv-head">
           <span className="kicker">{tr('kicker')}</span>
           <h2 className="headline">{tr('heading')}</h2>
@@ -247,66 +239,67 @@ export default async function Edition({ params }) {
           </a>
         </div>
 
-        <div className="cv-grid">
-          <div>
-            <section className="cv-block">
-              <h3 className="box-title">{tr('sections.profile')}</h3>
-              <p className="profile-text dropcap">{tr('profile')}</p>
-            </section>
-            <section className="cv-block">
-              <h3 className="box-title">{tr('sections.experience')}</h3>
-              {RESUME_EXPERIENCE.map(({ key, stack, url }) => (
-                <Entry
-                  key={key}
-                  title={tr(`experience.${key}.role`)}
-                  meta={`${tr(`experience.${key}.org`)} · ${tr(`experience.${key}.place`)}`}
-                  period={tr(`experience.${key}.period`)}
-                  points={tr.raw(`experience.${key}.points`)}
-                  stack={stack}
-                  url={url}
-                />
-              ))}
-            </section>
-          </div>
-          <div className="cv-side">
-            <section className="cv-block">
-              <h3 className="box-title">{tr('sections.education')}</h3>
+        <div className="cv-page">
+          <section className="cv-block">
+            <h3 className="box-title">{tr('sections.profile')}</h3>
+            <p className="profile-text dropcap">{tr('profile')}</p>
+          </section>
+          <section className="cv-block">
+            <h3 className="box-title">{tr('sections.experience')}</h3>
+            {RESUME_EXPERIENCE.map(({ key, stack, url }) => (
               <Entry
-                title={tr('education.degree')}
-                meta={`${tr('education.school')} · ${tr('education.place')}`}
-                period={tr('education.period')}
-                points={tr.raw('education.points')}
+                key={key}
+                title={tr(`experience.${key}.role`)}
+                meta={`${tr(`experience.${key}.org`)} · ${tr(`experience.${key}.place`)}`}
+                period={tr(`experience.${key}.period`)}
+                points={tr.raw(`experience.${key}.points`)}
+                stack={stack}
+                url={url}
               />
-            </section>
-            <section className="cv-block">
-              <h3 className="box-title">{tr('sections.project')}</h3>
-              <Entry
-                title={tr('project.title')}
-                period={tr('project.period')}
-                points={tr.raw('project.points')}
-                stack={RESUME_PROJECT.stack}
-                url={RESUME_PROJECT.url}
-                urlLabel={tr('project.repo')}
-              />
-            </section>
-            <section className="cv-block">
-              <h3 className="box-title">{tr('sections.skills')}</h3>
-              <dl className="skills">
-                {RESUME_SKILLS.map(({ key, value }) => (
-                  <div key={key}>
-                    <dt>{tr(`skills.${key}`)}</dt>
-                    <dd>{value ?? tr(`skillValues.${key}`)}</dd>
-                  </div>
-                ))}
-              </dl>
-              <p className="byline" style={{ marginTop: 16 }}>{tr('footer.updated')}</p>
-            </section>
-          </div>
+            ))}
+          </section>
         </div>
       </Page>
 
-      {/* ── Page 5: letters and the back-page advertisement ── */}
-      <Page n={5} head={paper('pageHeads.letters')} {...pageProps}>
+      <Page n={PAGES.cvMore} head={paper('pageHeads.cvMore')} {...pageProps}>
+        <div className="cv-page">
+          <section className="cv-block">
+            <h3 className="box-title">{tr('sections.education')}</h3>
+            <Entry
+              title={tr('education.degree')}
+              meta={`${tr('education.school')} · ${tr('education.place')}`}
+              period={tr('education.period')}
+              points={tr.raw('education.points')}
+            />
+          </section>
+          <section className="cv-block">
+            <h3 className="box-title">{tr('sections.project')}</h3>
+            <Entry
+              title={tr('project.title')}
+              period={tr('project.period')}
+              points={tr.raw('project.points')}
+              stack={RESUME_PROJECT.stack}
+              url={RESUME_PROJECT.url}
+              urlLabel={tr('project.repo')}
+            />
+          </section>
+          <section className="cv-block">
+            <h3 className="box-title">{tr('sections.skills')}</h3>
+            <dl className="skills">
+              {RESUME_SKILLS.map(({ key, value }) => (
+                <div key={key}>
+                  <dt>{tr(`skills.${key}`)}</dt>
+                  <dd>{value ?? tr(`skillValues.${key}`)}</dd>
+                </div>
+              ))}
+            </dl>
+            <p className="byline" style={{ marginTop: 16 }}>{tr('footer.updated')}</p>
+          </section>
+        </div>
+      </Page>
+
+      {/* ── Letters and the back-page advertisement ── */}
+      <Page n={PAGES.letters} head={paper('pageHeads.letters')} {...pageProps}>
         <div className="back-page">
           <section id="letters" aria-labelledby="letters-title">
             <header className="section-head">
@@ -333,7 +326,7 @@ export default async function Edition({ params }) {
         </p>
       </Page>
 
-      <PageTurner total={TOTAL} />
+      <PageTurner total={TOTAL_PAGES} />
     </>
   );
 }

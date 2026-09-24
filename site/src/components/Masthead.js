@@ -3,12 +3,13 @@
 import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
+import { PAGES } from '@/content/pages';
 
 const SECTIONS = [
-  { page: 1, key: 'front' },
-  { page: 2, key: 'projects' },
-  { page: 4, key: 'cv' },
-  { page: 5, key: 'letters' },
+  { page: PAGES.front, key: 'front' },
+  { page: PAGES.firstProject, key: 'projects' },
+  { page: PAGES.cv, key: 'cv' },
+  { page: PAGES.letters, key: 'letters' },
 ];
 
 /** Front-page masthead: ears, blackletter title, folio line (edition, date, languages) and page index. */
