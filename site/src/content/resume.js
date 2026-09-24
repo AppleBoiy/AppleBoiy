@@ -17,7 +17,7 @@ export const RESUME_PROJECT = {
 // Tool names are not translated; `research` is localized via Resume.skillValues.
 export const RESUME_SKILLS = [
   { key: 'languages', value: 'Python, C/C++, MATLAB, Bash, SQL' },
-  { key: 'computing', value: 'NumPy, Pandas, SciPy, KAGAYAKI HPC Cluster, PBS Job Scheduling' },
+  { key: 'computing', value: 'NumPy, Pandas, SciPy, KAGAYAKI at JAIST (PBS), LANTA at ThaiSC (Slurm), Large-scale data transfer' },
   { key: 'tools', value: 'Git, Docker, Linux, Makefile, Neo4j, Protégé' },
   { key: 'research' },
 ];

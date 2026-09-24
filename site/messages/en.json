@@ -47,6 +47,7 @@
         "Chaipat Jainan, a final-year computer science student at Chiang Mai University, has spent recent years teaching machines to reason about untidy information: public health services, unstructured text and, most recently, millions of stars.",
         "Since April 2026, Jainan has served as a Research Assistant at the National Astronomical Research Institute of Thailand (NARIT), building HDBSCAN clustering pipelines and AutoGluon models to reconstruct how galaxies merged.",
         "Earlier work led to the Japan Advanced Institute of Science and Technology, where large datasets were processed on the KAGAYAKI supercomputer to build knowledge graphs for the safety testing of autonomous vehicles.",
+        "Jainan has also worked on a second supercomputer, LANTA at the Thai Supercomputer Center (ThaiSC), trading PBS for Slurm job scheduling — and picking up, along the way, the particular craft of moving very large datasets on and off the machines.",
         "“Take something sprawling and give it a structure you can reason over,” is how the approach might be summarised — whether the subject is a hospital, a paragraph, or a spiral arm."
       ],
       "caption": "SPIRAL STRUCTURE — A halftone study of a galaxy of the kind now under examination at NARIT."
@@ -229,7 +230,7 @@
       "notes": "Field Notes",
       "top": "Overview"
     },
-    "profile": "Final-year computer science student with research experience in computational data analysis and AI systems. Proficient in Python, MATLAB, and high-performance computing environments, with a track record of processing large-scale datasets, building automated analysis pipelines, and conducting research at JAIST.",
+    "profile": "Final-year computer science student with research experience in computational data analysis and AI systems. Proficient in Python, MATLAB, and high-performance computing environments, with a track record of processing large-scale datasets, building automated analysis pipelines, and conducting research at JAIST. Hands-on with two HPC systems — KAGAYAKI at JAIST (PBS) and LANTA at ThaiSC (Slurm) — including moving large research datasets on and off the clusters.",
     "experience": {
       "narit": {
         "role": "Research Assistant",
