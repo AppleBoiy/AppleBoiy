@@ -149,6 +149,13 @@
       "continued": "Full story"
     },
     "items": {
+      "m81-ddo66": {
+        "title": "Ultra-faint Substructure in M81/M82 and the Origin of DDO 66",
+        "category": "Galactic archaeology",
+        "role": "Internship research · NARIT & Chiang Mai University",
+        "summary": "A ten-week internship at NARIT on two open questions: can ultra-faint stellar substructure beyond a published DBSCAN baseline be recovered around M81 and M82, and where did the dwarf galaxy DDO 66 (Holmberg IX) come from? The work spans 5.9 million resolved stars in 62 HST fields, crowded-field photometry, H I data-cube analysis and GPU simulation on the LANTA supercomputer.",
+        "outcome": "Both questions remain open, and the report says exactly why. Delivered: a validated GPU N-body benchmark (500,000 particles on one A100 at 3.2 TFLOP/s, energy drift 8.6 × 10⁻⁴), a reproducible DOLPHOT configuration, an H I decomposition robust across four masking treatments, and a set of clean, pre-registered negative results."
+      },
       "onto-phsrs": {
         "title": "Ontology-Augmented Health Recommendation",
         "category": "Ontology engineering",
@@ -239,7 +246,10 @@
         "period": "Apr 2026 — Present",
         "points": [
           "Architecting an optimised HDBSCAN clustering pipeline for reconstructing galactic merger histories.",
-          "Implementing AutoGluon-based supervised learning to isolate faint stellar structures within high-dimensional chemodynamical datasets."
+          "Implementing AutoGluon-based supervised learning to isolate faint stellar structures within high-dimensional chemodynamical datasets.",
+          "Benchmarked the group’s N-body code on the LANTA supercomputer (ThaiSC) with Slurm, on CPU and GPU nodes: 500,000 particles on one A100 at 3.2 TFLOP/s, with energy and virial checks passing.",
+          "Ran DOLPHOT crowded-field photometry and artificial-star completeness tests on HST imaging of the M81 group — 5.9 million resolved stars across 62 fields.",
+          "Tested the origin of the dwarf galaxy DDO 66 with H I data-cube decomposition and pre-registered hypothesis gates, keeping an auditable provenance ledger across 8 repositories."
         ]
       },
       "jaist": {

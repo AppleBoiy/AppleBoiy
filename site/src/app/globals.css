@@ -1740,3 +1740,5 @@ html[lang='ja'] .classified-band { letter-spacing: 0.02em; }
   border-bottom: 2px dotted rgb(27 26 23 / 0.4);
   transform: translateY(-4px);
 }
+
+.lab-lead .pull-quote p { font-size: clamp(1.25rem, 1.8vw, 1.6rem); }

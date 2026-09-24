@@ -2,6 +2,12 @@
 // `section` decides which page of the paper prints the story.
 export const PROJECTS = [
   {
+    slug: 'm81-ddo66',
+    section: 'research',
+    year: '2026',
+    stack: ['Slurm', 'A100 GPU', 'DOLPHOT', 'DBSCAN', 'H I cubes', 'N-body'],
+  },
+  {
     slug: 'onto-phsrs',
     section: 'research',
     year: '2026',
@@ -26,7 +32,7 @@ export const PROJECTS = [
   },
   {
     slug: 'fits-viewer',
-    section: 'research',
+    section: 'tools',
     year: '2026',
     featured: true,
     stack: ['Next.js', 'Canvas API', 'FITS'],
