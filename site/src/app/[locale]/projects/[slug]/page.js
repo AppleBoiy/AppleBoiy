@@ -4,6 +4,13 @@ import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { PROJECTS, getProject } from '@/content/projects';
 import { stripProtocol } from '@/content/site';
+import HalftoneClouds from '@/components/HalftoneClouds';
+import Starfield from '@/components/Starfield';
+
+const CLOUDS = [
+  { x: 0.35, y: 0.02, w: 0.6, h: 0.24 },
+  { x: 0.6, y: 0.45, w: 0.4, h: 0.2 },
+];
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) => PROJECTS.map(({ slug }) => ({ locale, slug })));
@@ -38,58 +45,69 @@ export default async function ProjectPage({ params }) {
 
   return (
     <article>
-      <header className="page-head rise">
-        <Link href="/projects" className="back">
+      <section data-scene="sky" className="scene scene-sky page-hero project-hero">
+        <div className="scene-art clouds-hero">
+          <HalftoneClouds clouds={CLOUDS} seed={index * 13 + 5} />
+        </div>
+        <Link href="/projects" className="back" data-reveal>
           <span aria-hidden="true">←</span> {t('labels.back')}
         </Link>
-        <p className="eyebrow" style={{ marginTop: 48 }}>{t(`items.${slug}.category`)}</p>
-        <h1 className="title" style={{ marginTop: 20, maxWidth: '22ch' }}>{t(`items.${slug}.title`)}</h1>
-      </header>
-
-      <dl className="facts rise" style={{ animationDelay: '100ms' }}>
-        <div>
-          <dt className="eyebrow">{t('labels.year')}</dt>
-          <dd className="mono" style={{ color: 'var(--ink)' }}>{project.year}</dd>
-        </div>
-        <div>
-          <dt className="eyebrow">{t('labels.role')}</dt>
-          <dd>{t(`items.${slug}.role`)}</dd>
-        </div>
-        <div>
-          <dt className="eyebrow">{t('labels.stack')}</dt>
-          <dd>{project.stack.join(', ')}</dd>
-        </div>
-        <div>
-          <dt className="eyebrow">{t('labels.links')}</dt>
-          <dd>
-            {links.length === 0 && <span className="faint">—</span>}
-            {links.map((link) => (
-              <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="link" title={link.text}>
-                {link.label} <span className="arrow arrow-ne" aria-hidden="true">↗</span>
-              </a>
-            ))}
-          </dd>
-        </div>
-      </dl>
-
-      <section className="band rise" style={{ animationDelay: '160ms', borderTop: 0 }}>
-        <h2 className="eyebrow band-label">{t('labels.overview')}</h2>
-        <p className="prose" style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(1.2rem, 2vw, 1.4rem)', lineHeight: 1.6 }}>
-          {t(`items.${slug}.summary`)}
+        <p className="tag" data-reveal style={{ marginTop: 32, alignSelf: 'flex-start' }}>
+          {t(`items.${slug}.category`)}
         </p>
+        <h1 className="display" data-reveal="2">{t(`items.${slug}.title`)}</h1>
+
+        <dl className="glass facts" data-reveal="3">
+          <div>
+            <dt className="tag">{t('labels.year')}</dt>
+            <dd>{project.year}</dd>
+          </div>
+          <div>
+            <dt className="tag">{t('labels.role')}</dt>
+            <dd>{t(`items.${slug}.role`)}</dd>
+          </div>
+          <div>
+            <dt className="tag">{t('labels.stack')}</dt>
+            <dd>{project.stack.join(', ')}</dd>
+          </div>
+          <div>
+            <dt className="tag">{t('labels.links')}</dt>
+            <dd>
+              {links.length === 0 && '—'}
+              {links.map((link) => (
+                <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" title={link.text}>
+                  {link.label} ↗
+                </a>
+              ))}
+            </dd>
+          </div>
+        </dl>
       </section>
 
-      <section className="band">
-        <h2 className="eyebrow band-label">{t('labels.outcome')}</h2>
-        <p className="prose">{t(`items.${slug}.outcome`)}</p>
+      <section id="overview" data-scene="paper" data-label={t('sections.overview')} className="scene scene-paper scene-flow">
+        <div className="detail">
+          <div data-reveal>
+            <p className="tag">{t('labels.overview')}</p>
+            <p className="lead">{t(`items.${slug}.summary`)}</p>
+          </div>
+          <div data-reveal="2">
+            <p className="tag">{t('labels.outcome')}</p>
+            <p className="body">{t(`items.${slug}.outcome`)}</p>
+          </div>
+        </div>
       </section>
 
-      <Link href={`/projects/${next.slug}`} className="next">
-        <span className="eyebrow">{t('labels.next')}</span>
-        <span className="row-title">
-          {t(`items.${next.slug}.title`)} <span className="arrow faint" aria-hidden="true">→</span>
-        </span>
-      </Link>
+      <section id="next" data-scene="sky" data-label={t('sections.next')} className="scene scene-night scene-next">
+        <div className="scene-art">
+          <Starfield seed={index + 40} bright={6} />
+        </div>
+        <p className="tag" data-reveal style={{ alignSelf: 'flex-start' }}>{t('labels.next')}</p>
+        <Link href={`/projects/${next.slug}`} className="next-link" data-reveal="2">
+          <span className="display">
+            {t(`items.${next.slug}.title`)} <span className="arrow" aria-hidden="true">→</span>
+          </span>
+        </Link>
+      </section>
     </article>
   );
 }

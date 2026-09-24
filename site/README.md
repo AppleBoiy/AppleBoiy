@@ -27,10 +27,20 @@ To add a project: add an entry to `src/content/projects.js` and a matching
 
 ## Design
 
-Plain CSS in `src/app/globals.css` — one ink, one paper, three greys, defined as custom properties
-at the top of the file. Dark mode follows the operating system. Type: EB Garamond (display),
-IBM Plex Sans (text), IBM Plex Mono (dates), with Noto Serif/Sans Thai and Shippori Mincho /
-Noto Sans JP for the Thai and Japanese editions.
+"Sky & paper": full-screen scenes in ultramarine sky, night sky, and aged paper, framed by a
+thin left rail (section ruler) and a top hairline. Type: Instrument Serif (display, with italic
+accents), Inter Tight (text), IBM Plex Mono (labels). Styles live in `src/app/globals.css`;
+palette tokens are at the top.
+
+All imagery is generated in the browser, so there are no image assets to manage:
+
+- `HalftoneClouds` — printed-halftone clouds (`clouds` boxes position them)
+- `GalaxyPlate` — an engraved plate of a spiral galaxy
+- `Starfield` — night sky with glowing stars
+- `Constellation` — the projects as stars; edges are in `CONSTELLATION_EDGES`
+  and each project's `star` position is in `src/content/projects.js`
+
+Headings accept `<em>…</em>` in the message files for the italic accent word.
 
 ## Deploy
 

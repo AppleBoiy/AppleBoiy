@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { fontVariables } from '@/app/fonts';
 import { SITE } from '@/content/site';
-import SiteHeader from '@/components/SiteHeader';
+import Chrome from '@/components/Chrome';
 import SiteFooter from '@/components/SiteFooter';
 import '../globals.css';
 
@@ -32,10 +32,7 @@ export async function generateMetadata({ params }) {
 }
 
 export const viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f6f6f4' },
-    { media: '(prefers-color-scheme: dark)', color: '#111111' },
-  ],
+  themeColor: '#0f64b0',
 };
 
 export default async function LocaleLayout({ children, params }) {
@@ -46,16 +43,13 @@ export default async function LocaleLayout({ children, params }) {
   const t = await getTranslations({ locale, namespace: 'Site' });
 
   return (
-    <html lang={locale} className={fontVariables}>
+    <html lang={locale} className={fontVariables} suppressHydrationWarning>
       <body>
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
         <NextIntlClientProvider>
           <a href="#main" className="skip">{t('nav.skip')}</a>
-          <div className="page" id="top">
-            <SiteHeader />
-          </div>
-          <main id="main" className="page">
-            {children}
-          </main>
+          <Chrome />
+          <main id="main">{children}</main>
           <SiteFooter />
         </NextIntlClientProvider>
       </body>

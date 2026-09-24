@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { RESUME_EXPERIENCE, RESUME_PROJECT, RESUME_SKILLS } from '@/content/resume';
 import { SITE, stripProtocol } from '@/content/site';
+import rich from '@/components/Rich';
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -8,14 +9,14 @@ export async function generateMetadata({ params }) {
   return { title: t('metaTitle'), description: t('metaDescription'), alternates: { canonical: `/${locale}/cv` } };
 }
 
-function Band({ index, label, children }) {
+function Section({ id, label, index, children }) {
   return (
-    <section className="band" aria-labelledby={`cv-${index}`}>
-      <header className="band-label">
-        <span className="num mono">{index}</span>
-        <h2 id={`cv-${index}`} className="eyebrow">{label}</h2>
+    <section id={id} data-scene="paper" data-label={label} className="scene scene-paper scene-flow cv-section">
+      <header data-reveal>
+        <span className="tag">{index}</span>
+        <h2 className="h2">{label}</h2>
       </header>
-      <div>{children}</div>
+      <div data-reveal="2">{children}</div>
     </section>
   );
 }
@@ -24,7 +25,7 @@ function Entry({ title, meta, period, points, stack, url, urlLabel }) {
   return (
     <article className="entry">
       <h3 className="entry-title">{title}</h3>
-      <p className="entry-period mono">{period}</p>
+      <p className="tag entry-period">{period}</p>
       {meta && <p className="entry-meta">{meta}</p>}
       {points?.length > 0 && (
         <ul className="points">
@@ -32,11 +33,11 @@ function Entry({ title, meta, period, points, stack, url, urlLabel }) {
         </ul>
       )}
       {(stack?.length > 0 || url) && (
-        <p className="tags">
-          {stack?.length > 0 && <span>{stack.join(' · ')}</span>}
+        <p className="stack">
+          {stack?.map((item) => <span key={item} className="tag">{item}</span>)}
           {url && (
-            <a href={url} target="_blank" rel="noopener noreferrer" className="link muted">
-              {urlLabel || stripProtocol(url)} <span className="arrow arrow-ne" aria-hidden="true">↗</span>
+            <a href={url} target="_blank" rel="noopener noreferrer" className="text-link">
+              {urlLabel || stripProtocol(url)} <span className="arrow" aria-hidden="true">↗</span>
             </a>
           )}
         </p>
@@ -58,25 +59,21 @@ export default async function CvPage({ params }) {
 
   return (
     <>
-      <header className="hero rise">
-        <p className="eyebrow">{t('eyebrow')}</p>
-        <h1 className="display">{SITE.name}</h1>
-        <p className="lede">{t('headline')}</p>
+      <section id="top" data-scene="paper" data-label={t('sections.top')} className="scene scene-paper cv-hero">
+        <p className="tag" data-reveal>{t('eyebrow')} — {SITE.name}</p>
+        <h1 className="display" data-reveal="2">{rich(t, 'heading')}</h1>
+        <p className="lead" data-reveal="3">{t('headline')}</p>
 
-        <dl className="cv-contacts">
+        <dl className="cv-contacts" data-reveal="3">
           <div>
-            <dt className="eyebrow">{t('contact.location')}</dt>
+            <dt className="tag">{t('contact.location')}</dt>
             <dd>{t('contact.locationValue')}</dd>
           </div>
           {contacts.map(({ label, value, href }) => (
             <div key={label}>
-              <dt className="eyebrow">{label}</dt>
+              <dt className="tag">{label}</dt>
               <dd>
-                <a
-                  href={href}
-                  className="link"
-                  {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                >
+                <a href={href} {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
                   {value}
                 </a>
               </dd>
@@ -84,20 +81,16 @@ export default async function CvPage({ params }) {
           ))}
         </dl>
 
-        <div className="cv-actions">
-          <a href={SITE.resume} download={SITE.resumeFilename} className="more" style={{ marginTop: 0 }}>
-            PDF <span className="arrow" aria-hidden="true">↓</span>
-          </a>
-        </div>
-      </header>
+        <a href={SITE.resume} download={SITE.resumeFilename} className="btn-black cv-download" data-reveal="4">
+          {t('download')} <span className="btn-box" aria-hidden="true">↓</span>
+        </a>
+      </section>
 
-      <Band index="01" label={t('sections.profile')}>
-        <p className="prose" style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(1.2rem, 2vw, 1.3rem)', lineHeight: 1.65 }}>
-          {t('profile')}
-        </p>
-      </Band>
+      <Section id="profile" index="01" label={t('sections.profile')}>
+        <p className="lead" style={{ maxWidth: '36ch' }}>{t('profile')}</p>
+      </Section>
 
-      <Band index="02" label={t('sections.experience')}>
+      <Section id="experience" index="02" label={t('sections.experience')}>
         <div className="entries">
           {RESUME_EXPERIENCE.map(({ key, stack, url }) => (
             <Entry
@@ -111,18 +104,18 @@ export default async function CvPage({ params }) {
             />
           ))}
         </div>
-      </Band>
+      </Section>
 
-      <Band index="03" label={t('sections.education')}>
+      <Section id="education" index="03" label={t('sections.education')}>
         <Entry
           title={t('education.degree')}
           meta={`${t('education.school')} · ${t('education.place')}`}
           period={t('education.period')}
           points={t.raw('education.points')}
         />
-      </Band>
+      </Section>
 
-      <Band index="04" label={t('sections.project')}>
+      <Section id="project" index="04" label={t('sections.project')}>
         <Entry
           title={t('project.title')}
           period={t('project.period')}
@@ -131,9 +124,9 @@ export default async function CvPage({ params }) {
           url={RESUME_PROJECT.url}
           urlLabel={t('project.repo')}
         />
-      </Band>
+      </Section>
 
-      <Band index="05" label={t('sections.skills')}>
+      <Section id="skills" index="05" label={t('sections.skills')}>
         <dl className="skills">
           {RESUME_SKILLS.map(({ key, value }) => (
             <div key={key}>
@@ -142,8 +135,8 @@ export default async function CvPage({ params }) {
             </div>
           ))}
         </dl>
-        <p className="mono" style={{ marginTop: 40 }}>{t('footer.updated')}</p>
-      </Band>
+        <p className="tag" style={{ marginTop: 40 }}>{t('footer.updated')}</p>
+      </Section>
     </>
   );
 }

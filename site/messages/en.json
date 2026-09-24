@@ -8,7 +8,8 @@
       "home": "Home",
       "projects": "Projects",
       "cv": "CV",
-      "skip": "Skip to content"
+      "skip": "Skip to content",
+      "contact": "Contact"
     },
     "language": "Language",
     "languageNames": {
@@ -26,43 +27,62 @@
       "title": "Page not found",
       "body": "The page you were looking for does not exist or has moved.",
       "home": "Return home"
+    },
+    "menu": {
+      "open": "Open menu",
+      "close": "Close",
+      "label": "Site menu",
+      "sections": "Sections on this page"
     }
   },
   "Home": {
-    "greeting": "Hello — I’m",
-    "intro": "I build knowledge graphs, ontologies, and data pipelines that run on high-performance computing. I’m a final-year computer science student at Chiang Mai University, currently applying machine learning to galactic archaeology.",
-    "now": {
-      "label": "Now",
-      "role": "Research Assistant",
-      "org": "National Astronomical Research Institute of Thailand",
-      "since": "Since April 2026",
-      "text": "Reconstructing galactic merger histories with HDBSCAN clustering and AutoGluon models on high-dimensional chemodynamical data."
+    "sections": {
+      "intro": "Intro",
+      "research": "Research",
+      "work": "The work",
+      "path": "The path",
+      "contact": "Contact"
     },
-    "focus": {
-      "label": "Focus",
-      "items": [
-        "Knowledge graphs & ontology engineering",
-        "Scientific computing on HPC clusters",
-        "Machine learning for astronomy"
-      ]
+    "intro": {
+      "tag": "Chaipat Jainan — Research engineer",
+      "title": "Finding <em>structure</em> in scattered data.",
+      "text": "I build knowledge graphs, ontologies, and data pipelines that run on high-performance computing — and I’m currently applying machine learning to the history of galaxies.",
+      "nowTag": "Currently",
+      "now": "Research Assistant at the National Astronomical Research Institute of Thailand (NARIT), since April 2026. Final-year computer science student at Chiang Mai University."
     },
-    "selected": {
-      "label": "Selected work",
+    "research": {
+      "tag": "The research",
+      "title": "From ontologies <em>to galaxies.</em>",
+      "text": "Two fields, one habit of mind: take something sprawling — public health services, unstructured text, millions of stars — and give it a structure you can reason over.",
+      "focusTag": "Focus",
+      "focus": [
+        "Knowledge graphs & ontology engineering (OWL, SPARQL, SWRL)",
+        "Scientific computing on HPC clusters (KAGAYAKI, PBS)",
+        "Machine learning for galactic archaeology (HDBSCAN, AutoGluon)"
+      ],
+      "plate": "Plate I — Spiral structure, halftone study"
+    },
+    "work": {
+      "tag": "The work",
+      "title": "Selected <em>work</em>",
+      "hint": "Each star is a project; the lines connect related work. Hover or tab through them.",
+      "read": "Read the project",
       "all": "All projects"
     },
     "path": {
-      "label": "Path",
-      "cv": "Full CV",
+      "tag": "The path",
+      "title": "Where I’ve <em>been.</em>",
+      "cv": "Read the full CV",
       "items": [
         {
           "period": "2026 —",
           "title": "Research Assistant",
-          "org": "NARIT"
+          "org": "National Astronomical Research Institute of Thailand"
         },
         {
           "period": "2025",
           "title": "Research Intern, KnOWLab",
-          "org": "JAIST, Japan"
+          "org": "Japan Advanced Institute of Science and Technology"
         },
         {
           "period": "2024 — 25",
@@ -77,9 +97,19 @@
       ]
     },
     "contact": {
-      "label": "Contact",
-      "text": "Open to research collaborations and graduate opportunities. The quickest way to reach me is email.",
-      "cta": "Write to me"
+      "tag": "The conversation",
+      "title": "Write me a <em>line.</em>",
+      "text": "Open to research collaborations and graduate opportunities. Every message is read, and answered.",
+      "form": {
+        "name": "Your name",
+        "namePlaceholder": "Ada Lovelace",
+        "message": "What would you like to talk about?",
+        "messagePlaceholder": "A collaboration, a question, a position…",
+        "send": "Send the message",
+        "copied": "Email copied",
+        "subject": "Hello from your website",
+        "note": "Sending opens your email app with the message ready to go."
+      }
     }
   },
   "Projects": {
@@ -154,6 +184,14 @@
         "summary": "A documentation hub for systems programming courses, with Makefile-driven builds that generate and publish software setup guides.",
         "outcome": "Used by 100+ students across 5 courses; standardised the assembly programming environment."
       }
+    },
+    "tag": "Index",
+    "heading": "All <em>projects</em>",
+    "sections": {
+      "list": "Index",
+      "overview": "Overview",
+      "outcome": "Outcome",
+      "next": "Next"
     }
   },
   "Resume": {
@@ -174,7 +212,8 @@
       "education": "Education",
       "project": "Selected Project",
       "skills": "Skills",
-      "notes": "Field Notes"
+      "notes": "Field Notes",
+      "top": "Overview"
     },
     "profile": "Final-year computer science student with research experience in computational data analysis and AI systems. Proficient in Python, MATLAB, and high-performance computing environments, with a track record of processing large-scale datasets, building automated analysis pipelines, and conducting research at JAIST.",
     "experience": {
@@ -253,6 +292,8 @@
       "rights": "Chaipat Jainan",
       "updated": "Updated September 2026",
       "top": "Back to top"
-    }
+    },
+    "heading": "Curriculum <em>vitae</em>",
+    "download": "Download PDF"
   }
 }

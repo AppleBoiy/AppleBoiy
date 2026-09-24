@@ -1,6 +1,6 @@
 import {
-  EB_Garamond,
-  IBM_Plex_Sans,
+  Instrument_Serif,
+  Inter_Tight,
   IBM_Plex_Mono,
   Shippori_Mincho,
   Noto_Sans_JP,
@@ -8,15 +8,15 @@ import {
   Noto_Serif_Thai,
 } from 'next/font/google';
 
-export const serif = EB_Garamond({
+export const serif = Instrument_Serif({
   subsets: ['latin'],
-  weight: ['400', '500'],
+  weight: '400',
   style: ['normal', 'italic'],
   variable: '--font-serif',
   display: 'swap',
 });
 
-export const sans = IBM_Plex_Sans({
+export const sans = Inter_Tight({
   subsets: ['latin'],
   weight: ['400', '500'],
   variable: '--font-sans',
@@ -25,7 +25,7 @@ export const sans = IBM_Plex_Sans({
 
 export const mono = IBM_Plex_Mono({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['400', '500'],
   variable: '--font-mono',
   display: 'swap',
 });
