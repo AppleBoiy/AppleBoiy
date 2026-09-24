@@ -4,8 +4,6 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { fontVariables } from '@/app/fonts';
 import { SITE } from '@/content/site';
-import Masthead from '@/components/Masthead';
-import SiteFooter from '@/components/SiteFooter';
 import '../globals.css';
 
 export function generateStaticParams() {
@@ -35,11 +33,6 @@ export const viewport = {
   themeColor: '#efe7d4',
 };
 
-// The date printed on the masthead: when this edition was built.
-function editionDate(locale) {
-  const tag = { en: 'en-GB', th: 'th-TH', ja: 'ja-JP' }[locale] || 'en-GB';
-  return new Intl.DateTimeFormat(tag, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(new Date());
-}
 
 export default async function LocaleLayout({ children, params }) {
   const { locale } = await params;
@@ -53,11 +46,7 @@ export default async function LocaleLayout({ children, params }) {
       <body>
         <NextIntlClientProvider>
           <a href="#main" className="skip">{t('nav.skip')}</a>
-          <div className="sheet">
-            <Masthead date={editionDate(locale)} />
-            <main id="main">{children}</main>
-            <SiteFooter />
-          </div>
+          <main id="main" className="paper">{children}</main>
         </NextIntlClientProvider>
       </body>
     </html>

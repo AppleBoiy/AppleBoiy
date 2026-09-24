@@ -1,52 +1,45 @@
 'use client';
 
 import { useLocale, useTranslations } from 'next-intl';
-import { Link, usePathname } from '@/i18n/navigation';
+import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 
 const SECTIONS = [
-  { href: '/', key: 'home' },
-  { href: '/projects', key: 'projects' },
-  { href: '/cv', key: 'cv' },
-  { href: '/#letters', key: 'contact' },
+  { page: 1, key: 'front' },
+  { page: 2, key: 'projects' },
+  { page: 4, key: 'cv' },
+  { page: 5, key: 'letters' },
 ];
 
-function isCurrent(pathname, href) {
-  if (href.includes('#')) return false;
-  return href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(`${href}/`);
-}
-
-/** Newspaper masthead: ears, blackletter title, folio line (date + editions) and section index. */
-export default function Masthead({ date }) {
+/** Front-page masthead: ears, blackletter title, folio line (edition, date, languages) and page index. */
+export default function Masthead({ edition }) {
   const t = useTranslations('Site');
   const th = useTranslations('Home');
+  const tp = useTranslations('Paper');
   const locale = useLocale();
-  const pathname = usePathname();
 
   return (
     <header id="masthead">
       <div className="ears">
         <p className="ear">{th('ear.left')}</p>
-        <p className="volume">{th('volume')}</p>
+        <p className="volume">{tp('volume', { volume: edition.volume, number: edition.number })}</p>
         <p className="ear">{th('ear.right')}</p>
       </div>
 
       <hr className="rule-thick" />
-      <Link href="/" className="masthead-title" aria-label={t('name')}>
-        The Chaipat Chronicle
-      </Link>
+      <h1 className="masthead-title">The Chaipat Chronicle</h1>
       <p className="masthead-tagline">“{th('tagline')}”</p>
       <hr className="rule-double" />
 
       <div className="folio">
         <span>{th('place')}</span>
-        <span>{date}</span>
+        <span>{edition.date}</span>
         <span className="editions" role="group" aria-label={t('language')}>
           <span>{th('editions')}</span>
           {routing.locales.map((l) => (
             <Link
               key={l}
-              href={pathname}
+              href="/"
               locale={l}
               lang={l}
               hrefLang={l}
@@ -62,11 +55,12 @@ export default function Masthead({ date }) {
 
       <nav aria-label={t('nav.label')}>
         <ul className="sections">
-          {SECTIONS.map(({ href, key }) => (
+          {SECTIONS.map(({ page, key }) => (
             <li key={key}>
-              <Link href={href} aria-current={isCurrent(pathname, href) ? 'page' : undefined}>
-                {t(`nav.${key}`)}
-              </Link>
+              <a href={`#page-${page}`}>
+                <span className="sections-page">{page}</span>
+                {tp(`sections.${key}`)}
+              </a>
             </li>
           ))}
         </ul>

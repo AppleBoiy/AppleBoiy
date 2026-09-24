@@ -4,12 +4,19 @@ Personal website of Chaipat Jainan — a minimal, monotone site in English, Thai
 
 ## Pages
 
-| Route | Content |
+The site is one newspaper edition per language, printed as numbered pages on a single URL
+(`/[locale]`), so nothing is hidden behind tabs:
+
+| Page | Content |
 | --- | --- |
-| `/[locale]` | Home: intro, current role, selected work, path, contact |
-| `/[locale]/projects` | All projects |
-| `/[locale]/projects/[slug]` | Project detail |
-| `/[locale]/cv` | Curriculum vitae (PDF in `public/resume.pdf`) |
+| 1 | Front page: masthead, lead story, Inside Today index, In Brief, poster ad, positions held |
+| 2–3 | Section B: all eight projects printed in full, plus a CV advertisement |
+| 4 | Classified: curriculum vitae (PDF in `public/resume.pdf`) |
+| 5 | Letters to the editor (composes an email) and the back-page advertisement |
+
+The masthead's "Vol." counts years since 2022 and "No." is the day of the year the edition was
+built (`src/lib/edition.js`). A floating page turner tracks and turns pages. Old routes redirect
+into the paper: `/projects` → page 2, `/projects/<slug>` → that story, `/cv` → page 4.
 
 Locales: `en` (default), `th`, `ja`. `/` redirects to the visitor's preferred locale.
 

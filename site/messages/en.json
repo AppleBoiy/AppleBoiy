@@ -35,7 +35,6 @@
       "left": "Forecast: clear skies, excellent seeing",
       "right": "Late edition · Free of charge"
     },
-    "volume": "Vol. I — No. 1",
     "editions": "Editions",
     "tagline": "All the structure that’s fit to print",
     "lead": {
@@ -312,5 +311,50 @@
     "download": "Download the PDF edition",
     "kicker": "Classified",
     "deck": "A complete record of service, study and skills"
+  },
+  "Paper": {
+    "volume": "Vol. {volume} — No. {number}",
+    "page": "Page {n}",
+    "pageOf": "Page {n} of {total}",
+    "continued": "Continued on page {n}",
+    "prev": "Previous page",
+    "next": "Next page",
+    "turn": "Turn the page",
+    "sections": {
+      "front": "Front Page",
+      "projects": "Projects",
+      "cv": "Curriculum Vitae",
+      "letters": "Letters"
+    },
+    "inside": {
+      "title": "Inside Today",
+      "items": [
+        {
+          "label": "Selected work — eight stories",
+          "page": 2
+        },
+        {
+          "label": "Curriculum vitae",
+          "page": 4
+        },
+        {
+          "label": "Letters to the editor",
+          "page": 5
+        }
+      ]
+    },
+    "pageHeads": {
+      "projects": "Section B — The Project Pages",
+      "projectsMore": "Section B — Continued",
+      "cv": "Classified — Curriculum Vitae",
+      "letters": "Letters & Advertisements"
+    },
+    "adCv": {
+      "kicker": "Advertisement",
+      "script": "Take one home!",
+      "line": "The complete CV — PDF edition",
+      "sub": "Printer-friendly. Fits in any briefcase.",
+      "cta": "Download now"
+    }
   }
 }

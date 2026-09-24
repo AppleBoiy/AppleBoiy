@@ -1,10 +1,7 @@
 import { routing } from '@/i18n/routing';
-import { PROJECTS } from '@/content/projects';
 import { SITE } from '@/content/site';
 
+// The whole paper is one page per edition (language).
 export default function sitemap() {
-  const paths = ['', '/projects', '/cv', ...PROJECTS.map(({ slug }) => `/projects/${slug}`)];
-  return routing.locales.flatMap((locale) =>
-    paths.map((path) => ({ url: `${SITE.url}/${locale}${path}`, changeFrequency: 'monthly' }))
-  );
+  return routing.locales.map((locale) => ({ url: `${SITE.url}/${locale}`, changeFrequency: 'monthly' }));
 }

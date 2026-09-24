@@ -35,7 +35,6 @@
       "left": "予報：快晴、観測日和",
       "right": "夕刊 · 無料"
     },
-    "volume": "第一巻 — 第一号",
     "editions": "版",
     "tagline": "構造にまつわるすべてのニュース",
     "lead": {
@@ -312,5 +311,50 @@
     "download": "PDF版をダウンロード",
     "kicker": "告知",
     "deck": "職歴・学歴・技能の完全な記録"
+  },
+  "Paper": {
+    "volume": "第{volume}巻 第{number}号",
+    "page": "{n}面",
+    "pageOf": "{total}面中 {n}面",
+    "continued": "{n}面へ続く",
+    "prev": "前の面",
+    "next": "次の面",
+    "turn": "ページをめくる",
+    "sections": {
+      "front": "第一面",
+      "projects": "プロジェクト",
+      "cv": "履歴書",
+      "letters": "お便り"
+    },
+    "inside": {
+      "title": "本日の紙面",
+      "items": [
+        {
+          "label": "主な仕事 — 8本の記事",
+          "page": 2
+        },
+        {
+          "label": "履歴書",
+          "page": 4
+        },
+        {
+          "label": "読者のお便り",
+          "page": 5
+        }
+      ]
+    },
+    "pageHeads": {
+      "projects": "第二部 — プロジェクト面",
+      "projectsMore": "第二部 — 続き",
+      "cv": "告知 — 履歴書",
+      "letters": "お便りと広告"
+    },
+    "adCv": {
+      "kicker": "広告",
+      "script": "Take one home!",
+      "line": "履歴書の完全版 — PDF版",
+      "sub": "印刷しやすく、鞄にもぴったり。",
+      "cta": "今すぐダウンロード"
+    }
   }
 }
