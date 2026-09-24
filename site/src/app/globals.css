@@ -910,21 +910,6 @@ html[lang='ja'] .entry-title { font-weight: 700; }
   scroll-margin-top: 16px;
 }
 
-/* A faint centre fold on wide pages. */
-@media (min-width: 1100px) {
-  .page::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 40px;
-    transform: translateX(-50%);
-    pointer-events: none;
-    background: linear-gradient(90deg, transparent, rgb(90 70 40 / 0.07) 45%, rgb(255 255 255 / 0.12) 55%, transparent);
-  }
-}
-
 .running-head {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
