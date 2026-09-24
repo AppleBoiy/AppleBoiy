@@ -38,7 +38,7 @@ export default async function HomePage({ params }) {
   return (
     <>
       <section id="intro" data-scene="sky" data-label={t('sections.intro')} className="scene scene-sky intro">
-        <div className="scene-art clouds-intro">
+        <div className="scene-art clouds-intro" data-parallax>
           <HalftoneClouds clouds={INTRO_CLOUDS} seed={11} />
         </div>
         <div>
@@ -119,7 +119,7 @@ export default async function HomePage({ params }) {
         <div className="scene-art">
           <Starfield seed={21} bright={12} density={0.0003} />
         </div>
-        <div className="scene-art clouds-contact">
+        <div className="scene-art clouds-contact" data-parallax>
           <HalftoneClouds clouds={CONTACT_CLOUDS} seed={4} color="196, 214, 244" />
         </div>
         <div className="contact">

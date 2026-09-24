@@ -38,6 +38,7 @@ export default async function ProjectPage({ params }) {
   const t = await getTranslations('Projects');
   const index = PROJECTS.indexOf(project);
   const next = PROJECTS[(index + 1) % PROJECTS.length];
+  const previous = PROJECTS[(index - 1 + PROJECTS.length) % PROJECTS.length];
   const links = [
     project.live && { href: project.live, label: t('labels.live'), text: stripProtocol(project.live) },
     project.source && { href: project.source, label: t('labels.source'), text: stripProtocol(project.source) },
@@ -46,7 +47,7 @@ export default async function ProjectPage({ params }) {
   return (
     <article>
       <section data-scene="sky" className="scene scene-sky page-hero project-hero">
-        <div className="scene-art clouds-hero">
+        <div className="scene-art clouds-hero" data-parallax>
           <HalftoneClouds clouds={CLOUDS} seed={index * 13 + 5} />
         </div>
         <Link href="/projects" className="back" data-reveal>
@@ -107,6 +108,14 @@ export default async function ProjectPage({ params }) {
             {t(`items.${next.slug}.title`)} <span className="arrow" aria-hidden="true">→</span>
           </span>
         </Link>
+        <nav className="pager" aria-label={t('labels.pager')}>
+          <Link href={`/projects/${previous.slug}`} className="text-link">
+            <span className="arrow" aria-hidden="true">←</span> {t('labels.previous')}: {t(`items.${previous.slug}.title`)}
+          </Link>
+          <Link href="/projects" className="text-link">
+            {t('labels.back')} <span className="arrow" aria-hidden="true">↗</span>
+          </Link>
+        </nav>
       </section>
     </article>
   );

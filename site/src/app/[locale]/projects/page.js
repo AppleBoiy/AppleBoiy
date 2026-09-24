@@ -23,7 +23,7 @@ export default async function ProjectsPage({ params }) {
   return (
     <>
       <section data-scene="sky" className="scene scene-sky page-hero">
-        <div className="scene-art clouds-hero">
+        <div className="scene-art clouds-hero" data-parallax>
           <HalftoneClouds clouds={CLOUDS} seed={31} />
         </div>
         <p className="tag" data-reveal>{t('tag')}</p>

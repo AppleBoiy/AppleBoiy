@@ -125,7 +125,9 @@
       "overview": "Overview",
       "outcome": "Outcome",
       "back": "All projects",
-      "next": "Next project"
+      "next": "Next project",
+      "previous": "Previous",
+      "pager": "More projects"
     },
     "items": {
       "onto-phsrs": {

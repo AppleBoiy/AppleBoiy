@@ -36,15 +36,23 @@ export default function Chrome() {
     const scenes = Array.from(document.querySelectorAll('[data-scene]'));
     setSections(scenes.map((el) => ({ id: el.id, label: el.dataset.label })).filter((s) => s.id && s.label));
 
+    // The frame's colour follows the scene under the top bar; the ruler follows mid-screen.
     const toneObserver = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          if (!entry.isIntersecting) continue;
-          document.documentElement.dataset.tone = entry.target.dataset.scene;
-          if (entry.target.id) setActive(entry.target.id);
+          if (entry.isIntersecting) document.documentElement.dataset.tone = entry.target.dataset.scene;
         }
       },
-      { rootMargin: '-40% 0px -59% 0px' }
+      { rootMargin: '-6% 0px -93% 0px' }
+    );
+
+    const activeObserver = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting && entry.target.id) setActive(entry.target.id);
+        }
+      },
+      { rootMargin: '-45% 0px -54% 0px' }
     );
 
     const revealObserver = new IntersectionObserver(
@@ -61,13 +69,43 @@ export default function Chrome() {
 
     scenes.forEach((scene) => {
       toneObserver.observe(scene);
+      activeObserver.observe(scene);
       revealObserver.observe(scene);
     });
     if (scenes[0]) document.documentElement.dataset.tone = scenes[0].dataset.scene;
 
     return () => {
       toneObserver.disconnect();
+      activeObserver.disconnect();
       revealObserver.disconnect();
+    };
+  }, [pathname]);
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined;
+    const layers = Array.from(document.querySelectorAll('.scene-art[data-parallax]'));
+    if (layers.length === 0) return undefined;
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const vh = window.innerHeight;
+      for (const layer of layers) {
+        const rect = layer.parentElement.getBoundingClientRect();
+        if (rect.bottom < 0 || rect.top > vh) continue;
+        const progress = (rect.top + rect.height / 2 - vh / 2) / vh;
+        layer.style.setProperty('--drift', `${(progress * 60).toFixed(1)}px`);
+      }
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
     };
   }, [pathname]);
 
@@ -118,6 +156,14 @@ export default function Chrome() {
         )}
 
         <div className="chrome-top">
+          <nav className="chrome-nav" aria-label={t('nav.label')}>
+            <Link href="/projects" aria-current={pathname.startsWith('/projects') ? 'page' : undefined}>
+              {t('nav.projects')}
+            </Link>
+            <Link href="/cv" aria-current={pathname === '/cv' ? 'page' : undefined}>
+              {t('nav.cv')}
+            </Link>
+          </nav>
           <div className="chrome-lang" role="group" aria-label={t('language')}>
             {routing.locales.map((l) => (
               <Link

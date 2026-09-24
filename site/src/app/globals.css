@@ -29,6 +29,7 @@
   --pad: 20px;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
   --chrome: var(--cream);
+  --fade: 192px;
 }
 
 @media (min-width: 1024px) {
@@ -291,6 +292,11 @@ html[lang='ja'] .tag { letter-spacing: 0.02em; font-size: 12px; }
   transition: opacity 400ms ease;
 }
 
+html[data-tone='sky'] .chrome-band {
+  opacity: 1;
+  background: linear-gradient(180deg, rgb(10 50 112 / 0.42), rgb(10 50 112 / 0.18));
+}
+
 html[data-tone='paper'] .chrome-band { opacity: 1; }
 
 .chrome-hline {
@@ -363,6 +369,43 @@ html[data-tone='paper'] .chrome-band { opacity: 1; }
   gap: 18px;
 }
 
+.chrome-nav {
+  display: flex;
+  gap: 22px;
+  margin-right: 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.chrome-nav a {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  min-height: 40px;
+  opacity: 0.8;
+  transition: opacity 200ms ease;
+}
+
+.chrome-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 8px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms var(--ease);
+}
+
+.chrome-nav a:hover,
+.chrome-nav a[aria-current='page'] { opacity: 1; }
+.chrome-nav a:hover::after,
+.chrome-nav a[aria-current='page']::after { transform: scaleX(1); }
+
 .chrome-lang {
   display: flex;
   gap: 2px;
@@ -388,6 +431,11 @@ html[data-tone='paper'] .chrome-band { opacity: 1; }
 
 @media (max-width: 1023px) {
   .chrome-top .chrome-lang { display: none; }
+}
+
+@media (max-width: 639px) {
+  .chrome-top .btn-black { display: none; }
+  .chrome-nav { gap: 18px; margin-right: 0; }
 }
 
 @media (min-width: 1024px) {
@@ -518,6 +566,37 @@ html[data-tone='paper'] .chrome-band { opacity: 1; }
 }
 
 .scene-flow { min-height: 0; }
+
+/* Transition: each scene dissolves in over the previous one through a
+   halftone screen (dots grow from nothing to solid), like a printed fade. */
+.scene:has(+ .scene) { padding-bottom: calc(72px + var(--fade) * 0.75); }
+.scene-flow:has(+ .scene-flow) { padding-bottom: 56px; }
+
+.scene + .scene {
+  margin-top: calc(var(--fade) * -1);
+  padding-top: calc(var(--top) + 56px + var(--fade) * 0.6);
+  -webkit-mask-image: url('/dissolve.svg'), linear-gradient(#000, #000);
+  mask-image: url('/dissolve.svg'), linear-gradient(#000, #000);
+  -webkit-mask-size: 32px var(--fade), 100% calc(100% - var(--fade) + 1px);
+  mask-size: 32px var(--fade), 100% calc(100% - var(--fade) + 1px);
+  -webkit-mask-position: 0 0, 0 calc(var(--fade) - 1px);
+  mask-position: 0 0, 0 calc(var(--fade) - 1px);
+  -webkit-mask-repeat: repeat-x, no-repeat;
+  mask-repeat: repeat-x, no-repeat;
+}
+
+.scene-flow + .scene-flow {
+  margin-top: 0;
+  padding-top: 56px;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+/* Artwork drifts slower than the page (set by Chrome on scroll). */
+.scene-art[data-parallax] {
+  transform: translate3d(0, var(--drift, 0px), 0);
+  will-change: transform;
+}
 
 .scene-sky {
   color: var(--cream);
@@ -989,6 +1068,11 @@ html[data-tone='paper'] .chrome-band { opacity: 1; }
   justify-content: flex-end;
 }
 
+.page-hero > .tag,
+.page-hero > .back,
+.scene-next > .tag,
+.not-found > .tag { align-self: flex-start; }
+
 .page-hero .display { margin-top: 24px; max-width: 14ch; }
 .page-hero .lead { margin-top: 28px; max-width: 34ch; }
 .clouds-hero { inset: 0 0 20% 35%; }
@@ -1092,6 +1176,19 @@ html[data-tone='paper'] .chrome-band { opacity: 1; }
 .detail .body { margin-top: 24px; color: var(--sepia-2); }
 
 .scene-next { min-height: 60svh; display: flex; flex-direction: column; justify-content: center; }
+
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px 40px;
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(255 255 255 / 0.2);
+}
+
+.pager .text-link:first-child .arrow { transition: transform 300ms var(--ease); }
+.pager .text-link:first-child:hover .arrow { transform: translateX(-5px); }
 
 .next-link { display: block; margin-top: 24px; }
 .next-link .display { font-size: clamp(2.6rem, 6vw, 6rem); }
