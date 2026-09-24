@@ -330,7 +330,10 @@
       "title": "Inside Today",
       "projects": "Section B — Projects",
       "cv": "Curriculum vitae",
-      "letters": "Letters to the editor"
+      "letters": "Letters to the editor",
+      "research": "Section B — From the Laboratory",
+      "tools": "Section C — The Workshop",
+      "more": "Further reading"
     },
     "pageHeads": {
       "projects": "Section B — Projects",
@@ -339,6 +342,20 @@
       "letters": "Letters & Advertisements"
     },
     "storyOf": "Story {n} of {total}",
-    "pullQuote": "The outcome"
+    "pullQuote": "The outcome",
+    "sectionPages": {
+      "research": {
+        "kicker": "Section B",
+        "heading": "From the Laboratory",
+        "deck": "Research in knowledge graphs, ontologies and the structure of galaxies",
+        "head": "Section B — From the Laboratory"
+      },
+      "tools": {
+        "kicker": "Section C",
+        "heading": "The Workshop",
+        "deck": "Tools, systems and teaching — built to be used every day",
+        "head": "Section C — The Workshop"
+      }
+    }
   }
 }

@@ -330,7 +330,10 @@
       "title": "本日の紙面",
       "projects": "第二部 — プロジェクト",
       "cv": "履歴書",
-      "letters": "読者のお便り"
+      "letters": "読者のお便り",
+      "research": "第二部 — 研究室より",
+      "tools": "第三部 — 工房",
+      "more": "その他の記事"
     },
     "pageHeads": {
       "projects": "第二部 — プロジェクト",
@@ -339,6 +342,20 @@
       "letters": "お便りと広告"
     },
     "storyOf": "{total}本中 {n}本目",
-    "pullQuote": "成果"
+    "pullQuote": "成果",
+    "sectionPages": {
+      "research": {
+        "kicker": "第二部",
+        "heading": "研究室より",
+        "deck": "ナレッジグラフ、オントロジー、そして銀河の構造をめぐる研究",
+        "head": "第二部 — 研究室より"
+      },
+      "tools": {
+        "kicker": "第三部",
+        "heading": "工房",
+        "deck": "日々使われるための道具、システム、そして教育",
+        "head": "第三部 — 工房"
+      }
+    }
   }
 }

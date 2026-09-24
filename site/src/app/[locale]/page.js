@@ -3,70 +3,97 @@ import { PROJECTS } from '@/content/projects';
 import { RESUME_EXPERIENCE, RESUME_PROJECT, RESUME_SKILLS } from '@/content/resume';
 import { SITE, stripProtocol } from '@/content/site';
 import { edition as makeEdition } from '@/lib/edition';
-import { PAGES, TOTAL_PAGES, projectPage } from '@/content/pages';
+import { PAGES, TOTAL_PAGES, projectPage, projectsIn } from '@/content/pages';
 import Masthead from '@/components/Masthead';
 import Page from '@/components/Page';
 import PageTurner from '@/components/PageTurner';
 import GalaxyPlate from '@/components/GalaxyPlate';
 import ContactForm from '@/components/ContactForm';
 
-function Story({ project, index, t, paper }) {
-  const { slug } = project;
-  const links = [
+function projectLinks(project, t) {
+  return [
     project.live && { href: project.live, label: t('labels.live') },
     project.source && { href: project.source, label: t('labels.source') },
   ].filter(Boolean);
+}
 
+function FactLine({ project, t }) {
   return (
-    <article id={`story-${slug}`} className="feature">
-      <header className="feature-head">
-        <p className="feature-meta">
-          <span className="kicker">{t(`items.${slug}.category`)}</span>
-          <span className="byline">{paper('storyOf', { n: index + 1, total: PROJECTS.length })}</span>
-        </p>
-        <h2 className="headline">{t(`items.${slug}.title`)}</h2>
+    <p className="story-facts">
+      <span>{project.stack.join(' · ')}</span>
+      {projectLinks(project, t).map((link) => (
+        <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer">
+          {link.label} ↗
+        </a>
+      ))}
+    </p>
+  );
+}
+
+/* Page B, layout 1 — the lead story across the top of the page. */
+function LeadStory({ project, t, paper }) {
+  const { slug } = project;
+  return (
+    <article id={`story-${slug}`} className="lab-lead">
+      <div className="lab-lead-head">
+        <span className="kicker">{t(`items.${slug}.category`)}</span>
+        <h3 className="headline">{t(`items.${slug}.title`)}</h3>
         <p className="deck">{t(`items.${slug}.role`)} · {project.year}</p>
-      </header>
-
-      <div className="feature-body">
-        <div className="feature-text">
-          <p className="feature-lede dropcap">{t(`items.${slug}.summary`)}</p>
-          <blockquote className="pull-quote">
-            <span className="label">{paper('pullQuote')}</span>
-            <p>{t(`items.${slug}.outcome`)}</p>
-          </blockquote>
-        </div>
-
-        <aside>
-          <h3 className="box-title">{t('labels.factFile')}</h3>
-          <dl className="facts">
-            <div>
-              <dt>{t('labels.year')}</dt>
-              <dd>{project.year}</dd>
-            </div>
-            <div>
-              <dt>{t('labels.role')}</dt>
-              <dd>{t(`items.${slug}.role`)}</dd>
-            </div>
-            <div>
-              <dt>{t('labels.stack')}</dt>
-              <dd>{project.stack.join(', ')}</dd>
-            </div>
-            {links.length > 0 && (
-              <div>
-                <dt>{t('labels.links')}</dt>
-                <dd>
-                  {links.map((link) => (
-                    <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer">
-                      {link.label} ↗
-                    </a>
-                  ))}
-                </dd>
-              </div>
-            )}
-          </dl>
-        </aside>
       </div>
+      <div className="lab-lead-body">
+        <p className="lab-lede dropcap">{t(`items.${slug}.summary`)}</p>
+        <blockquote className="pull-quote">
+          <span className="label">{paper('pullQuote')}</span>
+          <p>{t(`items.${slug}.outcome`)}</p>
+        </blockquote>
+        <FactLine project={project} t={t} />
+      </div>
+    </article>
+  );
+}
+
+/* Page B, layout 1 — the three stories set in ruled columns beneath the lead. */
+function ColumnStory({ project, t }) {
+  const { slug } = project;
+  return (
+    <article id={`story-${slug}`} className="lab-column">
+      <span className="kicker">{t(`items.${slug}.category`)}</span>
+      <h3>{t(`items.${slug}.title`)}</h3>
+      <p className="byline">{t(`items.${slug}.role`)} · {project.year}</p>
+      <p className="lab-summary">{t(`items.${slug}.summary`)}</p>
+      <p className="lab-outcome">{t(`items.${slug}.outcome`)}</p>
+      <FactLine project={project} t={t} />
+    </article>
+  );
+}
+
+/* Page C, layout 2 — an almanac ledger: number, story, and a boxed fact file per row. */
+function LedgerStory({ project, number, t }) {
+  const { slug } = project;
+  const links = projectLinks(project, t);
+  return (
+    <article id={`story-${slug}`} className="ledger-row">
+      <span className="ledger-number" aria-hidden="true">{String(number).padStart(2, '0')}</span>
+      <div className="ledger-story">
+        <span className="kicker">{t(`items.${slug}.category`)}</span>
+        <h3>{t(`items.${slug}.title`)}</h3>
+        <p className="byline">{t(`items.${slug}.role`)}</p>
+        <p className="ledger-summary">{t(`items.${slug}.summary`)}</p>
+      </div>
+      <aside className="ledger-box">
+        <p className="ledger-year">{project.year}</p>
+        <p className="ledger-outcome">{t(`items.${slug}.outcome`)}</p>
+        <p className="ledger-stack">{project.stack.join(' · ')}</p>
+        {links.length > 0 && (
+          <p className="ledger-links">
+            {links.map((link) => (
+              <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer">
+                {link.label} ↗
+              </a>
+            ))}
+          </p>
+        )}
+      </aside>
     </article>
   );
 }
@@ -133,10 +160,12 @@ export default async function Edition({ params }) {
     { label: tr('contact.linkedin'), value: stripProtocol(SITE.linkedin), href: SITE.linkedin },
   ];
 
-  const index = [
-    ...PROJECTS.map((project) => ({ label: tp(`items.${project.slug}.title`), page: projectPage(project.slug) })),
-    { label: paper('inside.cv'), page: PAGES.cv },
-    { label: paper('inside.letters'), page: PAGES.letters },
+  const research = projectsIn('research');
+  const tools = projectsIn('tools');
+  const indexGroups = [
+    { title: paper('inside.research'), items: research.map((p) => ({ label: tp(`items.${p.slug}.title`), page: projectPage(p.slug) })) },
+    { title: paper('inside.tools'), items: tools.map((p) => ({ label: tp(`items.${p.slug}.title`), page: projectPage(p.slug) })) },
+    { title: paper('inside.more'), items: [{ label: paper('inside.cv'), page: PAGES.cv }, { label: paper('inside.letters'), page: PAGES.letters }] },
   ];
 
   return (
@@ -170,18 +199,22 @@ export default async function Edition({ params }) {
 
           <aside>
             <h2 className="box-title">{paper('inside.title')}</h2>
-            <p className="inside-group label">{paper('inside.projects')}</p>
-            <ol className="inside">
-              {index.map((item) => (
-                <li key={item.page}>
-                  <a href={`#page-${item.page}`}>
-                    <span>{item.label}</span>
-                    <span className="inside-dots" aria-hidden="true" />
-                    <span className="inside-page">{item.page}</span>
-                  </a>
-                </li>
-              ))}
-            </ol>
+            {indexGroups.map((group) => (
+              <div key={group.title}>
+                <p className="inside-group label">{group.title}</p>
+                <ol className="inside">
+                  {group.items.map((item) => (
+                    <li key={item.label}>
+                      <a href={`#page-${item.page}`}>
+                        <span>{item.label}</span>
+                        <span className="inside-dots" aria-hidden="true" />
+                        <span className="inside-page">{item.page}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            ))}
 
             <PosterAd
               kicker={t('ad.kicker')}
@@ -196,17 +229,36 @@ export default async function Edition({ params }) {
         </div>
       </Page>
 
-      {/* ── One page per project ── */}
-      {PROJECTS.map((project, i) => (
-        <Page
-          key={project.slug}
-          n={projectPage(project.slug)}
-          head={`${paper('pageHeads.projects')} · ${tp(`items.${project.slug}.category`)}`}
-          {...pageProps}
-        >
-          <Story project={project} index={i} t={tp} paper={paper} />
-        </Page>
-      ))}
+      {/* ── Section B: the laboratory — lead story over three ruled columns ── */}
+      <Page n={PAGES.research} head={paper('sectionPages.research.head')} {...pageProps}>
+        <header className="section-front">
+          <span className="kicker">{paper('sectionPages.research.kicker')}</span>
+          <h2 className="headline">{paper('sectionPages.research.heading')}</h2>
+          <p className="deck">{paper('sectionPages.research.deck')}</p>
+        </header>
+        <LeadStory project={research[0]} t={tp} paper={paper} />
+        <div className="lab-columns">
+          {research.slice(1).map((project) => (
+            <ColumnStory key={project.slug} project={project} t={tp} />
+          ))}
+        </div>
+      </Page>
+
+      {/* ── Section C: the workshop — an almanac ledger, one row per project ── */}
+      <Page n={PAGES.tools} head={paper('sectionPages.tools.head')} {...pageProps}>
+        <header className="workshop-head">
+          <div>
+            <span className="kicker">{paper('sectionPages.tools.kicker')}</span>
+            <h2 className="headline">{paper('sectionPages.tools.heading')}</h2>
+          </div>
+          <p className="deck">{paper('sectionPages.tools.deck')}</p>
+        </header>
+        <div className="ledger">
+          {tools.map((project, i) => (
+            <LedgerStory key={project.slug} project={project} number={research.length + i + 1} t={tp} />
+          ))}
+        </div>
+      </Page>
 
       {/* ── Curriculum vitae, two pages ── */}
       <Page n={PAGES.cv} head={paper('pageHeads.cv')} {...pageProps}>

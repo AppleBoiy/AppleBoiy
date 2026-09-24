@@ -7,7 +7,7 @@ import { PAGES } from '@/content/pages';
 
 const SECTIONS = [
   { page: PAGES.front, key: 'front' },
-  { page: PAGES.firstProject, key: 'projects' },
+  { page: PAGES.research, key: 'projects' },
   { page: PAGES.cv, key: 'cv' },
   { page: PAGES.letters, key: 'letters' },
 ];
