@@ -29,18 +29,18 @@ export default function ContactForm({ email, labels }) {
 
   return (
     <form className="contact-form" onSubmit={onSubmit}>
-      <div className="glass field field-name">
+      <div className="field">
         <label htmlFor="cf-name">{labels.name}</label>
         <input id="cf-name" name="name" autoComplete="name" placeholder={labels.namePlaceholder} />
       </div>
-      <div className="glass field field-message">
+      <div className="field">
         <label htmlFor="cf-message">{labels.message}</label>
         <textarea id="cf-message" name="message" rows={5} required placeholder={labels.messagePlaceholder} />
       </div>
       <div className="contact-actions">
-        <button type="submit" className="btn-black btn-pill">{labels.send}</button>
-        <button type="button" className="text-link" onClick={copy}>
-          {copied ? labels.copied : email} <span aria-hidden="true">{copied ? '✓' : '⧉'}</span>
+        <button type="submit" className="btn">{labels.send} <span aria-hidden="true">✉</span></button>
+        <button type="button" className="text-link" onClick={copy} style={{ border: 0, background: 'none', padding: 0 }}>
+          {copied ? labels.copied : email}
         </button>
       </div>
       <p className="contact-note">{labels.note}</p>

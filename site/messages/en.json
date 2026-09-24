@@ -4,12 +4,12 @@
     "title": "Chaipat Jainan — Research Engineer",
     "description": "Computer science researcher working on knowledge graphs, ontology engineering, and data pipelines for high-performance computing.",
     "nav": {
-      "label": "Primary",
-      "home": "Home",
+      "label": "Sections",
+      "home": "Front Page",
       "projects": "Projects",
-      "cv": "CV",
-      "skip": "Skip to content",
-      "contact": "Contact"
+      "cv": "Curriculum Vitae",
+      "contact": "Letters",
+      "skip": "Skip to content"
     },
     "language": "Language",
     "languageNames": {
@@ -20,59 +20,72 @@
     "footer": {
       "contact": "Contact",
       "elsewhere": "Elsewhere",
-      "top": "Back to top",
-      "rights": "Chaipat Jainan"
+      "top": "Back to the masthead",
+      "rights": "Chaipat Jainan",
+      "printed": "Printed and published in Chiang Mai, Thailand"
     },
     "notFound": {
       "title": "Page not found",
       "body": "The page you were looking for does not exist or has moved.",
       "home": "Return home"
-    },
-    "menu": {
-      "open": "Open menu",
-      "close": "Close",
-      "label": "Site menu",
-      "sections": "Sections on this page"
     }
   },
   "Home": {
-    "sections": {
-      "intro": "Intro",
-      "research": "Research",
-      "work": "The work",
-      "path": "The path",
-      "contact": "Contact"
+    "ear": {
+      "left": "Forecast: clear skies, excellent seeing",
+      "right": "Late edition · Free of charge"
     },
-    "intro": {
-      "tag": "Chaipat Jainan — Research engineer",
-      "title": "Finding <em>structure</em> in scattered data.",
-      "text": "I build knowledge graphs, ontologies, and data pipelines that run on high-performance computing — and I’m currently applying machine learning to the history of galaxies.",
-      "nowTag": "Currently",
-      "now": "Research Assistant at the National Astronomical Research Institute of Thailand (NARIT), since April 2026. Final-year computer science student at Chiang Mai University."
-    },
-    "research": {
-      "tag": "The research",
-      "title": "From ontologies <em>to galaxies.</em>",
-      "text": "Two fields, one habit of mind: take something sprawling — public health services, unstructured text, millions of stars — and give it a structure you can reason over.",
-      "focusTag": "Focus",
-      "focus": [
-        "Knowledge graphs & ontology engineering (OWL, SPARQL, SWRL)",
-        "Scientific computing on HPC clusters (KAGAYAKI, PBS)",
-        "Machine learning for galactic archaeology (HDBSCAN, AutoGluon)"
+    "volume": "Vol. I — No. 1",
+    "editions": "Editions",
+    "tagline": "All the structure that’s fit to print",
+    "lead": {
+      "kicker": "Research",
+      "headline": "Local Engineer Finds Structure in Scattered Data",
+      "deck": "Chiang Mai researcher builds knowledge graphs, ontologies and data pipelines — and now turns machine learning on the history of galaxies",
+      "byline": "By a Staff Correspondent",
+      "dateline": "CHIANG MAI —",
+      "body": [
+        "Chaipat Jainan, a final-year computer science student at Chiang Mai University, has spent recent years teaching machines to reason about untidy information: public health services, unstructured text and, most recently, millions of stars.",
+        "Since April 2026, Jainan has served as a Research Assistant at the National Astronomical Research Institute of Thailand (NARIT), building HDBSCAN clustering pipelines and AutoGluon models to reconstruct how galaxies merged.",
+        "Earlier work led to the Japan Advanced Institute of Science and Technology, where large datasets were processed on the KAGAYAKI supercomputer to build knowledge graphs for the safety testing of autonomous vehicles.",
+        "“Take something sprawling and give it a structure you can reason over,” is how the approach might be summarised — whether the subject is a hospital, a paragraph, or a spiral arm."
       ],
-      "plate": "Plate I — Spiral structure, halftone study"
+      "caption": "SPIRAL STRUCTURE — A halftone study of a galaxy of the kind now under examination at NARIT."
+    },
+    "brief": {
+      "title": "In Brief",
+      "items": [
+        {
+          "head": "Fields of study",
+          "text": "Knowledge graphs and ontology engineering (OWL, SPARQL, SWRL)."
+        },
+        {
+          "head": "Instruments",
+          "text": "Scientific computing on HPC clusters — KAGAYAKI, PBS job scheduling."
+        },
+        {
+          "head": "Current beat",
+          "text": "Machine learning for galactic archaeology — HDBSCAN, AutoGluon."
+        }
+      ]
     },
     "work": {
-      "tag": "The work",
-      "title": "Selected <em>work</em>",
-      "hint": "Each star is a project; the lines connect related work. Hover or tab through them.",
-      "read": "Read the project",
-      "all": "All projects"
+      "title": "Selected Work",
+      "subtitle": "Dispatches from the laboratory",
+      "more": "Full story",
+      "all": "See every project in Section B"
     },
-    "path": {
-      "tag": "The path",
-      "title": "Where I’ve <em>been.</em>",
-      "cv": "Read the full CV",
+    "ad": {
+      "kicker": "Advertisement",
+      "script": "Refreshingly Structured!",
+      "line": "Research collaborations & graduate opportunities",
+      "sub": "Enjoy a good conversation — every letter is read.",
+      "cta": "Write today"
+    },
+    "record": {
+      "title": "Positions Held",
+      "subtitle": "The record",
+      "cv": "Read the complete curriculum vitae",
       "items": [
         {
           "period": "2026 —",
@@ -96,25 +109,25 @@
         }
       ]
     },
-    "contact": {
-      "tag": "The conversation",
-      "title": "Write me a <em>line.</em>",
-      "text": "Open to research collaborations and graduate opportunities. Every message is read, and answered.",
+    "letters": {
+      "title": "Letters to the Editor",
+      "text": "Correspondence on research, collaborations and positions is welcome.",
       "form": {
         "name": "Your name",
         "namePlaceholder": "Ada Lovelace",
-        "message": "What would you like to talk about?",
-        "messagePlaceholder": "A collaboration, a question, a position…",
-        "send": "Send the message",
-        "copied": "Email copied",
-        "subject": "Hello from your website",
-        "note": "Sending opens your email app with the message ready to go."
+        "message": "Your letter",
+        "messagePlaceholder": "Dear Editor…",
+        "send": "Post the letter",
+        "copied": "Address copied",
+        "subject": "A letter from your readers",
+        "note": "Posting opens your email app with the letter ready to send."
       }
-    }
+    },
+    "place": "Chiang Mai, Thailand"
   },
   "Projects": {
     "title": "Projects",
-    "intro": "Research software, tools, and systems — from formal ontologies to astronomy viewers.",
+    "intro": "Research software, tools and systems — from formal ontologies to astronomy viewers.",
     "labels": {
       "year": "Year",
       "role": "Context",
@@ -127,7 +140,13 @@
       "back": "All projects",
       "next": "Next project",
       "previous": "Previous",
-      "pager": "More projects"
+      "pager": "More projects",
+      "factFile": "Fact File",
+      "byline": "From the laboratory",
+      "previousStory": "Previous story",
+      "nextStory": "Next story",
+      "backSection": "Back to Section B",
+      "continued": "Full story"
     },
     "items": {
       "onto-phsrs": {
@@ -187,14 +206,8 @@
         "outcome": "Used by 100+ students across 5 courses; standardised the assembly programming environment."
       }
     },
-    "tag": "Index",
-    "heading": "All <em>projects</em>",
-    "sections": {
-      "list": "Index",
-      "overview": "Overview",
-      "outcome": "Outcome",
-      "next": "Next"
-    }
+    "section": "Section B",
+    "heading": "The Project Pages"
   },
   "Resume": {
     "metaTitle": "Curriculum Vitae",
@@ -295,7 +308,9 @@
       "updated": "Updated September 2026",
       "top": "Back to top"
     },
-    "heading": "Curriculum <em>vitae</em>",
-    "download": "Download PDF"
+    "heading": "Curriculum Vitae",
+    "download": "Download the PDF edition",
+    "kicker": "Classified",
+    "deck": "A complete record of service, study and skills"
   }
 }

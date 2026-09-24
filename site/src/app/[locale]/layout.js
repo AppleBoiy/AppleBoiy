@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { fontVariables } from '@/app/fonts';
 import { SITE } from '@/content/site';
-import Chrome from '@/components/Chrome';
+import Masthead from '@/components/Masthead';
 import SiteFooter from '@/components/SiteFooter';
 import '../globals.css';
 
@@ -32,8 +32,14 @@ export async function generateMetadata({ params }) {
 }
 
 export const viewport = {
-  themeColor: '#0f64b0',
+  themeColor: '#efe7d4',
 };
+
+// The date printed on the masthead: when this edition was built.
+function editionDate(locale) {
+  const tag = { en: 'en-GB', th: 'th-TH', ja: 'ja-JP' }[locale] || 'en-GB';
+  return new Intl.DateTimeFormat(tag, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(new Date());
+}
 
 export default async function LocaleLayout({ children, params }) {
   const { locale } = await params;
@@ -43,14 +49,15 @@ export default async function LocaleLayout({ children, params }) {
   const t = await getTranslations({ locale, namespace: 'Site' });
 
   return (
-    <html lang={locale} className={fontVariables} suppressHydrationWarning>
+    <html lang={locale} className={fontVariables}>
       <body>
-        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
         <NextIntlClientProvider>
           <a href="#main" className="skip">{t('nav.skip')}</a>
-          <Chrome />
-          <main id="main">{children}</main>
-          <SiteFooter />
+          <div className="sheet">
+            <Masthead date={editionDate(locale)} />
+            <main id="main">{children}</main>
+            <SiteFooter />
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

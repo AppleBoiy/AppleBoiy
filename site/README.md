@@ -27,20 +27,17 @@ To add a project: add an entry to `src/content/projects.js` and a matching
 
 ## Design
 
-"Sky & paper": full-screen scenes in ultramarine sky, night sky, and aged paper, framed by a
-thin left rail (section ruler) and a top hairline. Type: Instrument Serif (display, with italic
-accents), Inter Tight (text), IBM Plex Mono (labels). Styles live in `src/app/globals.css`;
-palette tokens are at the top.
+"The Chaipat Chronicle": an old broadsheet newspaper. Newsprint background with a fibre
+texture, black-ink rules, a blackletter masthead (UnifrakturMaguntia), Playfair Display
+headlines, Libre Caslon body text set in ruled columns with drop caps, Oswald for kickers
+and labels, and a vintage red-and-cream poster advertisement (Yellowtail script, sunburst)
+for contact. Styles live in `src/app/globals.css`; palette tokens are at the top.
 
-All imagery is generated in the browser, so there are no image assets to manage:
-
-- `HalftoneClouds` — printed-halftone clouds (`clouds` boxes position them)
-- `GalaxyPlate` — an engraved plate of a spiral galaxy
-- `Starfield` — night sky with glowing stars
-- `Constellation` — the projects as stars; edges are in `CONSTELLATION_EDGES`
-  and each project's `star` position is in `src/content/projects.js`
-
-Headings accept `<em>…</em>` in the message files for the italic accent word.
+- Front page: lead story, "In Brief" sidebar, poster ad, project stories, positions held,
+  and a letters-to-the-editor form that composes an email
+- Section B (`/projects`) and one article page per project
+- Classified curriculum vitae (`/cv`), print-friendly
+- `GalaxyPlate` draws the halftone "photograph" on the front page
 
 ## Deploy
 

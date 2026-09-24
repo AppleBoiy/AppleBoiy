@@ -4,10 +4,10 @@ import { useEffect, useRef } from 'react';
 import { fbm, fitCanvas, onResize, seeded } from '@/lib/art';
 
 /**
- * An engraved "plate": a two-armed spiral galaxy drawn as a halftone screen on paper,
- * framed with a border, graticule ticks, a compass, and a scale bar.
+ * A newspaper halftone "photograph" of a two-armed spiral galaxy, with graticule
+ * ticks, a compass, and a scale bar.
  */
-export default function GalaxyPlate({ caption, seed = 81 }) {
+export default function GalaxyPlate({ caption, seed = 81, ink = '27, 26, 23' }) {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -45,12 +45,7 @@ export default function GalaxyPlate({ caption, seed = 81 }) {
           if (d < 0.07) continue;
           const v = Math.min(1, d);
           const radius = (step / 2) * Math.pow(v, 0.6) * 1.08;
-          // Warm gold core fading into sepia ink.
-          const mix = Math.min(1, bulge * 2.2);
-          const red = Math.round(52 + (184 - 52) * mix);
-          const green = Math.round(38 + (137 - 38) * mix);
-          const blue = Math.round(24 + (58 - 24) * mix);
-          ctx.fillStyle = `rgba(${red}, ${green}, ${blue}, ${0.55 + v * 0.45})`;
+          ctx.fillStyle = `rgba(${ink}, ${0.6 + v * 0.4})`;
           ctx.beginPath();
           ctx.arc(x, y, radius, 0, Math.PI * 2);
           ctx.fill();
@@ -62,7 +57,7 @@ export default function GalaxyPlate({ caption, seed = 81 }) {
         const x = rand() * width;
         const y = rand() * height;
         if (Math.hypot(x - cx, y - cy) < R * 0.9) continue;
-        ctx.fillStyle = 'rgba(52, 38, 24, 0.7)';
+        ctx.fillStyle = `rgba(${ink}, 0.75)`;
         ctx.beginPath();
         ctx.arc(x, y, 0.8 + rand() * 1.6, 0, Math.PI * 2);
         ctx.fill();
@@ -70,7 +65,7 @@ export default function GalaxyPlate({ caption, seed = 81 }) {
     };
 
     return onResize(canvas, draw);
-  }, [seed]);
+  }, [seed, ink]);
 
   const ticks = Array.from({ length: 21 }, (_, i) => i * 5);
 
@@ -94,7 +89,7 @@ export default function GalaxyPlate({ caption, seed = 81 }) {
         <span className="plate-label plate-e">E</span>
         <span className="plate-scale"><i />10 kpc</span>
       </div>
-      {caption && <figcaption className="tag tag-paper">{caption}</figcaption>}
+      {caption && <figcaption className="caption">{caption}</figcaption>}
     </figure>
   );
 }
