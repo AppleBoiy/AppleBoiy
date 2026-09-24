@@ -1,0 +1,258 @@
+{
+  "Site": {
+    "name": "Chaipat Jainan",
+    "title": "Chaipat Jainan — Research Engineer",
+    "description": "Computer science researcher working on knowledge graphs, ontology engineering, and data pipelines for high-performance computing.",
+    "nav": {
+      "label": "Primary",
+      "home": "Home",
+      "projects": "Projects",
+      "cv": "CV",
+      "skip": "Skip to content"
+    },
+    "language": "Language",
+    "languageNames": {
+      "en": "English",
+      "th": "ไทย",
+      "ja": "日本語"
+    },
+    "footer": {
+      "contact": "Contact",
+      "elsewhere": "Elsewhere",
+      "top": "Back to top",
+      "rights": "Chaipat Jainan"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "body": "The page you were looking for does not exist or has moved.",
+      "home": "Return home"
+    }
+  },
+  "Home": {
+    "greeting": "Hello — I’m",
+    "intro": "I build knowledge graphs, ontologies, and data pipelines that run on high-performance computing. I’m a final-year computer science student at Chiang Mai University, currently applying machine learning to galactic archaeology.",
+    "now": {
+      "label": "Now",
+      "role": "Research Assistant",
+      "org": "National Astronomical Research Institute of Thailand",
+      "since": "Since April 2026",
+      "text": "Reconstructing galactic merger histories with HDBSCAN clustering and AutoGluon models on high-dimensional chemodynamical data."
+    },
+    "focus": {
+      "label": "Focus",
+      "items": [
+        "Knowledge graphs & ontology engineering",
+        "Scientific computing on HPC clusters",
+        "Machine learning for astronomy"
+      ]
+    },
+    "selected": {
+      "label": "Selected work",
+      "all": "All projects"
+    },
+    "path": {
+      "label": "Path",
+      "cv": "Full CV",
+      "items": [
+        {
+          "period": "2026 —",
+          "title": "Research Assistant",
+          "org": "NARIT"
+        },
+        {
+          "period": "2025",
+          "title": "Research Intern, KnOWLab",
+          "org": "JAIST, Japan"
+        },
+        {
+          "period": "2024 — 25",
+          "title": "Software Developer (Contract)",
+          "org": "Chiang Mai University"
+        },
+        {
+          "period": "2022 — 25",
+          "title": "Teaching Assistant",
+          "org": "Chiang Mai University"
+        }
+      ]
+    },
+    "contact": {
+      "label": "Contact",
+      "text": "Open to research collaborations and graduate opportunities. The quickest way to reach me is email.",
+      "cta": "Write to me"
+    }
+  },
+  "Projects": {
+    "title": "Projects",
+    "intro": "Research software, tools, and systems — from formal ontologies to astronomy viewers.",
+    "labels": {
+      "year": "Year",
+      "role": "Context",
+      "stack": "Built with",
+      "links": "Links",
+      "live": "Visit site",
+      "source": "Source code",
+      "overview": "Overview",
+      "outcome": "Outcome",
+      "back": "All projects",
+      "next": "Next project"
+    },
+    "items": {
+      "onto-phsrs": {
+        "title": "Ontology-Augmented Health Recommendation",
+        "category": "Ontology engineering",
+        "role": "Independent research · Chiang Mai University",
+        "summary": "A semantic recommendation system for Thai public health services. An OWL-DL ontology with 85 classes and 411 individuals, integrated with SWRL reasoning and a SPARQL query interface.",
+        "outcome": "Matches user health profiles to service capabilities through explicit logic rather than keyword search — validated against every competency question with 38 SWRL rules and 40 SPARQL queries."
+      },
+      "knowledge-graph-jaist": {
+        "title": "Knowledge Graphs from Unstructured Data",
+        "category": "Knowledge graphs",
+        "role": "Research intern · JAIST, Japan",
+        "summary": "A pipeline that constructs knowledge graphs from unstructured sources to support safety testing of autonomous driving systems, processing large datasets on the KAGAYAKI HPC cluster.",
+        "outcome": "Presented at the JAIST Research Program 2025; automated semantic parsing reduced manual test-case generation."
+      },
+      "galaxy-figure-archive": {
+        "title": "M81 / M82 Research Figure Archive",
+        "category": "Galactic archaeology",
+        "role": "Personal research tool",
+        "summary": "An archive for resolved-stellar-population analyses of M81 and M82 — density models, background estimates, substructure detections, and validation figures, each with full axes, legends, and provenance.",
+        "outcome": "Brought the analysis record together into one searchable, stage-aware archive with source links and side-by-side figure comparison."
+      },
+      "fits-viewer": {
+        "title": "FITS Astronomy Data Viewer",
+        "category": "Scientific visualisation",
+        "role": "Personal project",
+        "summary": "An in-browser viewer for FITS files. A Canvas renderer displays CCD imagery and star catalogues of thousands of points without leaving the browser.",
+        "outcome": "A client-side FITS parser with optimised coordinate mapping for high-dimensional sky data."
+      },
+      "graph-explorer": {
+        "title": "Knowledge Graph Explorer",
+        "category": "Knowledge graphs",
+        "role": "Personal project",
+        "summary": "A graph explorer that maps dependencies between academic papers and technical specifications using D3 force simulations over PostgreSQL.",
+        "outcome": "Real-time adjacency views and relational analysis across research datasets."
+      },
+      "auto-grader": {
+        "title": "Automated Grading System",
+        "category": "Applied systems",
+        "role": "Software developer (contract) · Chiang Mai University",
+        "summary": "Backend for a departmental grading system: Docker sandboxes execute submissions and the GPT-3.5 API generates feedback on code quality.",
+        "outcome": "Served 80+ students per course and cut processing time by 80% while keeping feedback consistent."
+      },
+      "word-games": {
+        "title": "Word Games",
+        "category": "Algorithms",
+        "role": "Personal project",
+        "summary": "Client-side solvers for Boggle and Spelling Bee built on prefix trees and backtracking search, backed by a cascading dictionary resolver.",
+        "outcome": "Instant, in-browser validation using Trie lookups and depth-first search."
+      },
+      "kiwis": {
+        "title": "Kiwis — Course Handbook",
+        "category": "Education",
+        "role": "Teaching assistant · Chiang Mai University",
+        "summary": "A documentation hub for systems programming courses, with Makefile-driven builds that generate and publish software setup guides.",
+        "outcome": "Used by 100+ students across 5 courses; standardised the assembly programming environment."
+      }
+    }
+  },
+  "Resume": {
+    "metaTitle": "Curriculum Vitae",
+    "metaDescription": "Chaipat Jainan — computer science researcher working on knowledge graphs, ontology engineering, and data pipelines for high-performance computing.",
+    "eyebrow": "Curriculum Vitae",
+    "headline": "Computer science researcher building knowledge graphs, ontologies, and data pipelines for high-performance computing.",
+    "contact": {
+      "location": "Based in",
+      "locationValue": "Chiang Mai, Thailand",
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
+    "sections": {
+      "profile": "Profile",
+      "experience": "Experience",
+      "education": "Education",
+      "project": "Selected Project",
+      "skills": "Skills",
+      "notes": "Field Notes"
+    },
+    "profile": "Final-year computer science student with research experience in computational data analysis and AI systems. Proficient in Python, MATLAB, and high-performance computing environments, with a track record of processing large-scale datasets, building automated analysis pipelines, and conducting research at JAIST.",
+    "experience": {
+      "narit": {
+        "role": "Research Assistant",
+        "org": "National Astronomical Research Institute of Thailand (NARIT)",
+        "place": "Thailand",
+        "period": "Apr 2026 — Present",
+        "points": [
+          "Architecting an optimised HDBSCAN clustering pipeline for reconstructing galactic merger histories.",
+          "Implementing AutoGluon-based supervised learning to isolate faint stellar structures within high-dimensional chemodynamical datasets."
+        ]
+      },
+      "jaist": {
+        "role": "Research Intern — KnOWLab",
+        "org": "Japan Advanced Institute of Science and Technology (JAIST)",
+        "place": "Japan",
+        "period": "Apr — Sep 2025",
+        "points": [
+          "Conducted computational research on knowledge graph construction from unstructured data using Python-based analysis pipelines and machine learning techniques.",
+          "Processed large-scale datasets on the KAGAYAKI high-performance computing cluster with PBS job scheduling, implementing automated batch workflows for reproducible research.",
+          "Developed data validation and quality assurance algorithms to ensure research data integrity and constraint compliance across multi-stage processing pipelines."
+        ]
+      },
+      "cmuDev": {
+        "role": "Software Developer (Contract)",
+        "org": "Chiang Mai University",
+        "place": "Thailand",
+        "period": "Apr 2024 — Mar 2025",
+        "points": [
+          "Developed an automated grading system integrating the GPT-3.5 API for 80+ students, with data processing pipelines that reduced processing time by 80%.",
+          "Built database systems and data migration scripts in Python and SQL; designed the system architecture and wrote its technical documentation.",
+          "Implemented containerisation and automated deployment workflows using Docker and CI/CD pipelines."
+        ]
+      },
+      "cmuTa": {
+        "role": "Teaching Assistant",
+        "org": "Department of Computer Science, Chiang Mai University",
+        "place": "Thailand",
+        "period": "Aug 2022 — Mar 2025",
+        "points": [
+          "Developed and maintained an academic knowledge base (kiwis) with Makefile-driven build automation, serving 100+ users; authored bilingual technical documentation adopted across 5 courses."
+        ]
+      }
+    },
+    "education": {
+      "degree": "B.Sc. Computer Science",
+      "school": "Chiang Mai University",
+      "place": "Chiang Mai, Thailand",
+      "period": "Jun 2026",
+      "points": [
+        "GPA 3.1 / 4.0",
+        "Final-year research: JAIST–CMU joint collaboration"
+      ]
+    },
+    "project": {
+      "title": "Ontology-Augmented Thai Public Health Service Recommendation System",
+      "period": "Jan — Mar 2026",
+      "repo": "View repository",
+      "points": [
+        "Designed a domain-specific knowledge base of 85 classes, 411 individuals, and 22 data properties modelling Thai public health services within a formal ontology.",
+        "Developed 38 SWRL reasoning rules and 40 SPARQL queries across four competency domains, validated against every competency question with automated query escalation."
+      ]
+    },
+    "skills": {
+      "languages": "Languages",
+      "computing": "Scientific Computing & HPC",
+      "tools": "Tools & Frameworks",
+      "research": "Research & AI"
+    },
+    "skillValues": {
+      "research": "Knowledge Graphs, Ontology Engineering (OWL, SPARQL), LLM APIs, RAG Systems"
+    },
+    "notesIntro": "Informal write-ups from ongoing work.",
+    "footer": {
+      "rights": "Chaipat Jainan",
+      "updated": "Updated September 2026",
+      "top": "Back to top"
+    }
+  }
+}
