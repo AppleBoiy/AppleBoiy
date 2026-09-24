@@ -568,7 +568,8 @@ html[data-tone='paper'] .chrome-band { opacity: 1; }
 .scene-flow { min-height: 0; }
 
 /* Transition: each scene dissolves in over the previous one through a
-   halftone screen (dots grow from nothing to solid), like a printed fade. */
+   honeycomb (public/dissolve.svg): hexagons grow and turn opaque, with a
+   little jitter in their transparency, until they close into a solid edge. */
 .scene:has(+ .scene) { padding-bottom: calc(72px + var(--fade) * 0.75); }
 .scene-flow:has(+ .scene-flow) { padding-bottom: 56px; }
 
@@ -577,8 +578,8 @@ html[data-tone='paper'] .chrome-band { opacity: 1; }
   padding-top: calc(var(--top) + 56px + var(--fade) * 0.6);
   -webkit-mask-image: url('/dissolve.svg'), linear-gradient(#000, #000);
   mask-image: url('/dissolve.svg'), linear-gradient(#000, #000);
-  -webkit-mask-size: 32px var(--fade), 100% calc(100% - var(--fade) + 1px);
-  mask-size: 32px var(--fade), 100% calc(100% - var(--fade) + 1px);
+  -webkit-mask-size: 480px var(--fade), 100% calc(100% - var(--fade) + 1px);
+  mask-size: 480px var(--fade), 100% calc(100% - var(--fade) + 1px);
   -webkit-mask-position: 0 0, 0 calc(var(--fade) - 1px);
   mask-position: 0 0, 0 calc(var(--fade) - 1px);
   -webkit-mask-repeat: repeat-x, no-repeat;
