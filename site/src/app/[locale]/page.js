@@ -1,6 +1,6 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PROJECTS } from '@/content/projects';
-import { RESUME_EXPERIENCE, RESUME_PROJECT, RESUME_SKILLS } from '@/content/resume';
+import { RESUME_EXPERIENCE, RESUME_PROJECT, RESUME_SKILLS, TIMELINE_FROM } from '@/content/resume';
 import { SITE, stripProtocol } from '@/content/site';
 import { edition as makeEdition } from '@/lib/edition';
 import { PAGES, TOTAL_PAGES, projectPage, projectsIn } from '@/content/pages';
@@ -98,29 +98,70 @@ function LedgerStory({ project, number, t }) {
   );
 }
 
-function Entry({ title, meta, period, points, stack, url, urlLabel }) {
+const monthIndex = (ym) => {
+  const [year, month] = ym.split('-').map(Number);
+  return year * 12 + (month - 1);
+};
+
+/* "Service at a glance": a year ruler with one bar per role. */
+function Timeline({ roles, title, presentLabel }) {
+  const now = new Date();
+  const nowIndex = now.getFullYear() * 12 + now.getMonth();
+  const from = TIMELINE_FROM * 12;
+  const to = (now.getFullYear() + 1) * 12;
+  const pos = (index) => `${((index - from) / (to - from)) * 100}%`;
+  const years = Array.from({ length: now.getFullYear() - TIMELINE_FROM + 2 }, (_, i) => TIMELINE_FROM + i);
+
   return (
-    <article className="entry">
-      <div className="entry-top">
-        <h3 className="entry-title">{title}</h3>
-        <span className="entry-period">{period}</span>
+    <figure className="timeline">
+      <figcaption className="box-title">{title}</figcaption>
+      <div className="timeline-grid">
+        {roles.map((role) => {
+          const start = monthIndex(role.start);
+          const end = role.end ? monthIndex(role.end) + 1 : nowIndex + 1;
+          return (
+            <div key={role.key} className="timeline-row">
+              <span className="timeline-label">{role.label}</span>
+              <span className="timeline-track">
+                <span
+                  className={`timeline-bar ${role.end ? '' : 'is-current'}`}
+                  style={{ left: pos(start), width: `calc(${pos(end)} - ${pos(start)})` }}
+                  title={role.period}
+                />
+              </span>
+            </div>
+          );
+        })}
+        <div className="timeline-row timeline-axis" aria-hidden="true">
+          <span className="timeline-label" />
+          <span className="timeline-track">
+            {years.slice(0, -1).map((year) => (
+              <span key={year} className="timeline-year" style={{ left: pos(year * 12) }}>{year}</span>
+            ))}
+            <span className="timeline-now" style={{ left: pos(nowIndex) }}>{presentLabel}</span>
+          </span>
+        </div>
       </div>
-      {meta && <p className="entry-meta">{meta}</p>}
-      {points?.length > 0 && (
-        <ul className="points">
-          {points.map((point) => <li key={point}>{point}</li>)}
-        </ul>
-      )}
-      {(stack?.length > 0 || url) && (
-        <p className="stack">
-          {stack?.join(' · ')}
-          {url && (
-            <a href={url} target="_blank" rel="noopener noreferrer">
-              {urlLabel || stripProtocol(url)} ↗
-            </a>
-          )}
-        </p>
-      )}
+    </figure>
+  );
+}
+
+/* One job as a classified advertisement. */
+function ClassifiedAd({ title, org, period, points, stack, url }) {
+  return (
+    <article className="classified">
+      <h3 className="classified-band">{title}</h3>
+      <p className="classified-org">{org}</p>
+      <p className="classified-period">{period}</p>
+      <ul className="classified-points">
+        {points.map((point) => <li key={point}>{point}</li>)}
+      </ul>
+      <p className="classified-stack">
+        {stack.join(' · ')}
+        {url && (
+          <a href={url} target="_blank" rel="noopener noreferrer">{stripProtocol(url)} ↗</a>
+        )}
+      </p>
     </article>
   );
 }
@@ -260,94 +301,127 @@ export default async function Edition({ params }) {
         </div>
       </Page>
 
-      {/* ── Curriculum vitae, two pages ── */}
+      {/* ── Curriculum vitae, page 1: the record ── */}
       <Page n={PAGES.cv} head={paper('pageHeads.cv')} {...pageProps}>
-        <header className="cv-head">
-          <span className="kicker">{tr('kicker')}</span>
-          <h2 className="headline">{tr('heading')}</h2>
-          <p className="deck">{tr('deck')}</p>
+        <header className="record-head">
+          <span className="kicker">{tr('record.kicker')}</span>
+          <h2 className="headline">{tr('record.heading')}</h2>
+          <p className="deck">{tr('record.deck')}</p>
         </header>
 
-        <dl className="cv-contacts">
+        <div className="record-top">
           <div>
-            <dt>{tr('contact.location')}</dt>
-            <dd>{tr('contact.locationValue')}</dd>
-          </div>
-          {contacts.map(({ label, value, href }) => (
-            <div key={label}>
-              <dt>{label}</dt>
-              <dd>
-                <a href={href} {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
-                  {value}
-                </a>
-              </dd>
-            </div>
-          ))}
-        </dl>
-
-        <div className="cv-download">
-          <a href={SITE.resume} download={SITE.resumeFilename} className="btn">
-            {tr('download')} <span aria-hidden="true">↓</span>
-          </a>
-        </div>
-
-        <div className="cv-page">
-          <section className="cv-block">
-            <h3 className="box-title">{tr('sections.profile')}</h3>
-            <p className="profile-text dropcap">{tr('profile')}</p>
-          </section>
-          <section className="cv-block">
-            <h3 className="box-title">{tr('sections.experience')}</h3>
-            {RESUME_EXPERIENCE.map(({ key, stack, url }) => (
-              <Entry
-                key={key}
-                title={tr(`experience.${key}.role`)}
-                meta={`${tr(`experience.${key}.org`)} · ${tr(`experience.${key}.place`)}`}
-                period={tr(`experience.${key}.period`)}
-                points={tr.raw(`experience.${key}.points`)}
-                stack={stack}
-                url={url}
-              />
-            ))}
-          </section>
-        </div>
-      </Page>
-
-      <Page n={PAGES.cvMore} head={paper('pageHeads.cvMore')} {...pageProps}>
-        <div className="cv-page">
-          <section className="cv-block">
-            <h3 className="box-title">{tr('sections.education')}</h3>
-            <Entry
-              title={tr('education.degree')}
-              meta={`${tr('education.school')} · ${tr('education.place')}`}
-              period={tr('education.period')}
-              points={tr.raw('education.points')}
-            />
-          </section>
-          <section className="cv-block">
-            <h3 className="box-title">{tr('sections.project')}</h3>
-            <Entry
-              title={tr('project.title')}
-              period={tr('project.period')}
-              points={tr.raw('project.points')}
-              stack={RESUME_PROJECT.stack}
-              url={RESUME_PROJECT.url}
-              urlLabel={tr('project.repo')}
-            />
-          </section>
-          <section className="cv-block">
-            <h3 className="box-title">{tr('sections.skills')}</h3>
-            <dl className="skills">
-              {RESUME_SKILLS.map(({ key, value }) => (
-                <div key={key}>
-                  <dt>{tr(`skills.${key}`)}</dt>
-                  <dd>{value ?? tr(`skillValues.${key}`)}</dd>
+            <p className="record-profile dropcap">{tr('profile')}</p>
+            <dl className="record-contacts">
+              <div>
+                <dt>{tr('contact.location')}</dt>
+                <dd>{tr('contact.locationValue')}</dd>
+              </div>
+              {contacts.map(({ label, value, href }) => (
+                <div key={label}>
+                  <dt>{label}</dt>
+                  <dd>
+                    <a href={href} {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
+                      {value}
+                    </a>
+                  </dd>
                 </div>
               ))}
             </dl>
-            <p className="byline" style={{ marginTop: 16 }}>{tr('footer.updated')}</p>
-          </section>
+          </div>
+          <Timeline
+            title={tr('record.glance')}
+            presentLabel={tr('record.present')}
+            roles={RESUME_EXPERIENCE.map((role) => ({
+              ...role,
+              label: tr(`experience.${role.key}.role`),
+              period: tr(`experience.${role.key}.period`),
+            }))}
+          />
         </div>
+
+        <header className="section-head">
+          <h2>{tr('record.positions')}</h2>
+        </header>
+        <div className="classifieds">
+          {RESUME_EXPERIENCE.map(({ key, stack, url }) => (
+            <ClassifiedAd
+              key={key}
+              title={tr(`experience.${key}.role`)}
+              org={`${tr(`experience.${key}.org`)} · ${tr(`experience.${key}.place`)}`}
+              period={tr(`experience.${key}.period`)}
+              points={tr.raw(`experience.${key}.points`)}
+              stack={stack}
+              url={url}
+            />
+          ))}
+        </div>
+      </Page>
+
+      {/* ── Curriculum vitae, page 2: qualifications ── */}
+      <Page n={PAGES.cvMore} head={paper('pageHeads.cvMore')} {...pageProps}>
+        <header className="record-head">
+          <span className="kicker">{tr('qual.kicker')}</span>
+          <h2 className="headline">{tr('qual.heading')}</h2>
+        </header>
+
+        <div className="qual-grid">
+          <div className="certificate">
+            <p className="certificate-line">{tr('qual.certificate')}</p>
+            <p className="certificate-name">{SITE.name}</p>
+            <p className="certificate-line">{tr('qual.certifies')}</p>
+            <p className="certificate-degree">{tr('education.degree')}</p>
+            <p className="certificate-school">{tr('education.school')} · {tr('education.place')}</p>
+            <p className="certificate-seal" aria-hidden="true">✦</p>
+            <ul className="certificate-notes">
+              {tr.raw('education.points').map((point) => <li key={point}>{point}</li>)}
+            </ul>
+            <p className="certificate-date">{tr('education.period')}</p>
+          </div>
+
+          <div className="qual-side">
+            <article className="qual-project">
+              <span className="kicker">{tr('sections.project')}</span>
+              <h3>{tr('project.title')}</h3>
+              <p className="byline">{tr('project.period')}</p>
+              <ul className="classified-points">
+                {tr.raw('project.points').map((point) => <li key={point}>{point}</li>)}
+              </ul>
+              <p className="classified-stack">
+                {RESUME_PROJECT.stack.join(' · ')}
+                <a href={RESUME_PROJECT.url} target="_blank" rel="noopener noreferrer">{tr('project.repo')} ↗</a>
+              </p>
+            </article>
+
+            <a href={SITE.resume} download={SITE.resumeFilename} className="coupon">
+              <span className="coupon-scissors" aria-hidden="true">✂</span>
+              <span className="coupon-clip">{tr('qual.coupon.clip')}</span>
+              <span className="coupon-title">{tr('qual.coupon.title')}</span>
+              <span className="coupon-sub">{tr('qual.coupon.sub')}</span>
+              <span className="coupon-cta">{tr('qual.coupon.cta')} ↓</span>
+            </a>
+          </div>
+        </div>
+
+        <section className="exchange" aria-labelledby="exchange-title">
+          <header className="exchange-head">
+            <h3 id="exchange-title">{tr('qual.exchange')}</h3>
+            <span className="label">{tr('qual.listings')} · {edition.date}</span>
+          </header>
+          <dl>
+            {RESUME_SKILLS.map(({ key, value }) => (
+              <div key={key} className="exchange-row">
+                <dt>{tr(`skills.${key}`)}</dt>
+                <dd>
+                  {(value ?? tr(`skillValues.${key}`)).split(/[,、]\s*(?![^()（）]*[)）])/).map((item) => (
+                    <span key={item} className="exchange-item">{item}</span>
+                  ))}
+                </dd>
+              </div>
+            ))}
+          </dl>
+          <p className="byline" style={{ marginTop: 14 }}>{tr('footer.updated')}</p>
+        </section>
       </Page>
 
       {/* ── Letters and the back-page advertisement ── */}

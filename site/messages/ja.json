@@ -310,7 +310,29 @@
     "heading": "履歴書",
     "download": "PDF版をダウンロード",
     "kicker": "告知",
-    "deck": "職歴・学歴・技能の完全な記録"
+    "deck": "職歴・学歴・技能の完全な記録",
+    "record": {
+      "kicker": "告知",
+      "heading": "経歴",
+      "deck": "二面で綴る履歴書 — 職歴、学歴、技能",
+      "glance": "職歴の一覧",
+      "present": "現在",
+      "positions": "歴任した職"
+    },
+    "qual": {
+      "kicker": "告知（続き）",
+      "heading": "資格・技能",
+      "certificate": "ここに記す",
+      "certifies": "は次の学位課程に在籍",
+      "exchange": "技能市況",
+      "listings": "本日の相場",
+      "coupon": {
+        "clip": "切り取って保存",
+        "title": "履歴書 完全版",
+        "sub": "PDF版 · 印刷に最適",
+        "cta": "ダウンロード"
+      }
+    }
   },
   "Paper": {
     "volume": "第{volume}巻 第{number}号",

@@ -310,7 +310,29 @@
     "heading": "Curriculum Vitae",
     "download": "Download the PDF edition",
     "kicker": "Classified",
-    "deck": "A complete record of service, study and skills"
+    "deck": "A complete record of service, study and skills",
+    "record": {
+      "kicker": "Classified",
+      "heading": "The Record",
+      "deck": "A curriculum vitae in two pages: service, study and skills",
+      "glance": "Service at a glance",
+      "present": "Today",
+      "positions": "Positions Held"
+    },
+    "qual": {
+      "kicker": "Classified, continued",
+      "heading": "Qualifications",
+      "certificate": "Be it known that",
+      "certifies": "has read for the degree of",
+      "exchange": "Skills Exchange",
+      "listings": "Today’s listings",
+      "coupon": {
+        "clip": "Clip & keep",
+        "title": "The complete curriculum vitae",
+        "sub": "PDF edition · printer-friendly",
+        "cta": "Download"
+      }
+    }
   },
   "Paper": {
     "volume": "Vol. {volume} — No. {number}",
